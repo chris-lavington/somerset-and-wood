@@ -1,0 +1,173 @@
+[10-Feb-2020 09:01:31 UTC] PHP Fatal error:  Interface 'Interop\Container\ContainerInterface' not found in /home/somersetandwood/public_html/vendor/zendframework/zend-servicemanager/src/ServiceLocatorInterface.php on line 17
+[10-Feb-2020 10:26:18 UTC] PHP Fatal error:  Uncaught CredisException: Connection to Redis 127.0.0.1:6379 failed after 2 failures.Last Error : (111) Connection refused in /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php:475
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php(471): Credis_Client->connect()
+#1 /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php(784): Credis_Client->connect()
+#2 /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php(626): Credis_Client->__call('auth', Array)
+#3 /home/somersetandwood/public_html/vendor/colinmollenhour/cache-backend-redis/Cm/Cache/Backend/Redis.php(388): Credis_Client->auth('zFlIqYZpFpfOaH5...')
+#4 /home/somersetandwood/public_html/vendor/colinmollenhour/cache-backend-redis/Cm/Cache/Backend/Redis.php(250): Cm_Cache_Backend_Redis->_applyClientOptions(Object(Credis_Client))
+#5 /home/somersetandwood/public_html/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_Redis->__construct( in /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php on line 475
+[10-Feb-2020 10:26:20 UTC] PHP Fatal error:  Uncaught CredisException: Connection to Redis 127.0.0.1:6379 failed after 2 failures.Last Error : (111) Connection refused in /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php:475
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php(471): Credis_Client->connect()
+#1 /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php(784): Credis_Client->connect()
+#2 /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php(626): Credis_Client->__call('auth', Array)
+#3 /home/somersetandwood/public_html/vendor/colinmollenhour/cache-backend-redis/Cm/Cache/Backend/Redis.php(388): Credis_Client->auth('zFlIqYZpFpfOaH5...')
+#4 /home/somersetandwood/public_html/vendor/colinmollenhour/cache-backend-redis/Cm/Cache/Backend/Redis.php(250): Cm_Cache_Backend_Redis->_applyClientOptions(Object(Credis_Client))
+#5 /home/somersetandwood/public_html/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_Redis->__construct( in /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php on line 475
+[10-Feb-2020 10:26:21 UTC] PHP Fatal error:  Uncaught CredisException: Connection to Redis 127.0.0.1:6379 failed after 2 failures.Last Error : (111) Connection refused in /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php:475
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php(471): Credis_Client->connect()
+#1 /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php(784): Credis_Client->connect()
+#2 /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php(626): Credis_Client->__call('auth', Array)
+#3 /home/somersetandwood/public_html/vendor/colinmollenhour/cache-backend-redis/Cm/Cache/Backend/Redis.php(388): Credis_Client->auth('zFlIqYZpFpfOaH5...')
+#4 /home/somersetandwood/public_html/vendor/colinmollenhour/cache-backend-redis/Cm/Cache/Backend/Redis.php(250): Cm_Cache_Backend_Redis->_applyClientOptions(Object(Credis_Client))
+#5 /home/somersetandwood/public_html/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_Redis->__construct( in /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php on line 475
+[10-Feb-2020 10:38:50 UTC] PHP Fatal error:  Uncaught CredisException: Connection to Redis 127.0.0.1:6379 failed after 2 failures.Last Error : (111) Connection refused in /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php:475
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php(471): Credis_Client->connect()
+#1 /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php(784): Credis_Client->connect()
+#2 /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php(626): Credis_Client->__call('auth', Array)
+#3 /home/somersetandwood/public_html/vendor/colinmollenhour/cache-backend-redis/Cm/Cache/Backend/Redis.php(388): Credis_Client->auth('zFlIqYZpFpfOaH5...')
+#4 /home/somersetandwood/public_html/vendor/colinmollenhour/cache-backend-redis/Cm/Cache/Backend/Redis.php(250): Cm_Cache_Backend_Redis->_applyClientOptions(Object(Credis_Client))
+#5 /home/somersetandwood/public_html/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_Redis->__construct( in /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php on line 475
+[10-Feb-2020 10:38:50 UTC] PHP Fatal error:  Uncaught CredisException: Connection to Redis 127.0.0.1:6379 failed after 2 failures.Last Error : (111) Connection refused in /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php:475
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php(471): Credis_Client->connect()
+#1 /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php(784): Credis_Client->connect()
+#2 /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php(626): Credis_Client->__call('auth', Array)
+#3 /home/somersetandwood/public_html/vendor/colinmollenhour/cache-backend-redis/Cm/Cache/Backend/Redis.php(388): Credis_Client->auth('zFlIqYZpFpfOaH5...')
+#4 /home/somersetandwood/public_html/vendor/colinmollenhour/cache-backend-redis/Cm/Cache/Backend/Redis.php(250): Cm_Cache_Backend_Redis->_applyClientOptions(Object(Credis_Client))
+#5 /home/somersetandwood/public_html/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_Redis->__construct( in /home/somersetandwood/public_html/vendor/colinmollenhour/credis/Client.php on line 475
+[10-Feb-2020 12:04:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Ess\M2ePro\Helper\Module' not found in /home/somersetandwood/public_html/app/code/Ess/M2ePro/registration.php:6
+Stack trace:
+#0 /home/somersetandwood/public_html/app/etc/NonComposerComponentRegistration.php(29): require_once()
+#1 [internal function]: Magento\NonComposerComponentRegistration\{closure}('/home/somerseta...')
+#2 /home/somersetandwood/public_html/app/etc/NonComposerComponentRegistration.php(29): array_map(Object(Closure), Array)
+#3 /home/somersetandwood/public_html/app/etc/NonComposerComponentRegistration.php(33): Magento\NonComposerComponentRegistration\main()
+#4 /home/somersetandwood/public_html/vendor/composer/autoload_real.php(70): require('/home/somerseta...')
+#5 /home/somersetandwood/public_html/vendor/composer/autoload_real.php(60): composerRequired4010565bf59dcf105ce5ec0677d34be('b4cf39431a4b949...', '/home/somerseta...')
+#6 /home/somersetandwood/public_html/vendor/autoload.php(7): ComposerAutoloaderInitd4010565bf59dcf105ce5ec0677d34be::getLoader()
+#7 /home/somerseta in /home/somersetandwood/public_html/app/code/Ess/M2ePro/registration.php on line 6
+[10-Feb-2020 12:04:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Ess\M2ePro\Helper\Module' not found in /home/somersetandwood/public_html/app/code/Ess/M2ePro/registration.php:6
+Stack trace:
+#0 /home/somersetandwood/public_html/app/etc/NonComposerComponentRegistration.php(29): require_once()
+#1 [internal function]: Magento\NonComposerComponentRegistration\{closure}('/home/somerseta...')
+#2 /home/somersetandwood/public_html/app/etc/NonComposerComponentRegistration.php(29): array_map(Object(Closure), Array)
+#3 /home/somersetandwood/public_html/app/etc/NonComposerComponentRegistration.php(33): Magento\NonComposerComponentRegistration\main()
+#4 /home/somersetandwood/public_html/vendor/composer/autoload_real.php(70): require('/home/somerseta...')
+#5 /home/somersetandwood/public_html/vendor/composer/autoload_real.php(60): composerRequired4010565bf59dcf105ce5ec0677d34be('b4cf39431a4b949...', '/home/somerseta...')
+#6 /home/somersetandwood/public_html/vendor/autoload.php(7): ComposerAutoloaderInitd4010565bf59dcf105ce5ec0677d34be::getLoader()
+#7 /home/somerseta in /home/somersetandwood/public_html/app/code/Ess/M2ePro/registration.php on line 6
+[10-Feb-2020 12:05:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Ess\M2ePro\Helper\Module' not found in /home/somersetandwood/public_html/app/code/Ess/M2ePro/registration.php:6
+Stack trace:
+#0 /home/somersetandwood/public_html/app/etc/NonComposerComponentRegistration.php(29): require_once()
+#1 [internal function]: Magento\NonComposerComponentRegistration\{closure}('/home/somerseta...')
+#2 /home/somersetandwood/public_html/app/etc/NonComposerComponentRegistration.php(29): array_map(Object(Closure), Array)
+#3 /home/somersetandwood/public_html/app/etc/NonComposerComponentRegistration.php(33): Magento\NonComposerComponentRegistration\main()
+#4 /home/somersetandwood/public_html/vendor/composer/autoload_real.php(70): require('/home/somerseta...')
+#5 /home/somersetandwood/public_html/vendor/composer/autoload_real.php(60): composerRequired4010565bf59dcf105ce5ec0677d34be('b4cf39431a4b949...', '/home/somerseta...')
+#6 /home/somersetandwood/public_html/vendor/autoload.php(7): ComposerAutoloaderInitd4010565bf59dcf105ce5ec0677d34be::getLoader()
+#7 /home/somerseta in /home/somersetandwood/public_html/app/code/Ess/M2ePro/registration.php on line 6
+[10-Feb-2020 12:05:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Ess\M2ePro\Helper\Module' not found in /home/somersetandwood/public_html/app/code/Ess/M2ePro/registration.php:6
+Stack trace:
+#0 /home/somersetandwood/public_html/app/etc/NonComposerComponentRegistration.php(29): require_once()
+#1 [internal function]: Magento\NonComposerComponentRegistration\{closure}('/home/somerseta...')
+#2 /home/somersetandwood/public_html/app/etc/NonComposerComponentRegistration.php(29): array_map(Object(Closure), Array)
+#3 /home/somersetandwood/public_html/app/etc/NonComposerComponentRegistration.php(33): Magento\NonComposerComponentRegistration\main()
+#4 /home/somersetandwood/public_html/vendor/composer/autoload_real.php(70): require('/home/somerseta...')
+#5 /home/somersetandwood/public_html/vendor/composer/autoload_real.php(60): composerRequired4010565bf59dcf105ce5ec0677d34be('b4cf39431a4b949...', '/home/somerseta...')
+#6 /home/somersetandwood/public_html/vendor/autoload.php(7): ComposerAutoloaderInitd4010565bf59dcf105ce5ec0677d34be::getLoader()
+#7 /home/somerseta in /home/somersetandwood/public_html/app/code/Ess/M2ePro/registration.php on line 6
+[10-Feb-2020 15:05:32 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[10-Feb-2020 15:05:39 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[10-Feb-2020 15:09:44 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[10-Feb-2020 15:12:58 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[10-Feb-2020 15:16:28 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[10-Feb-2020 15:18:41 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[10-Feb-2020 15:18:43 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[11-Feb-2020 09:13:45 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[11-Feb-2020 09:29:26 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[11-Feb-2020 09:32:00 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[11-Feb-2020 09:32:02 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[11-Feb-2020 09:32:04 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[11-Feb-2020 09:32:15 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[11-Feb-2020 09:32:19 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[11-Feb-2020 09:33:50 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[11-Feb-2020 09:38:13 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[11-Feb-2020 09:40:29 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[11-Feb-2020 09:40:39 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[11-Feb-2020 09:43:39 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[11-Feb-2020 09:50:22 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[11-Feb-2020 09:50:24 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[11-Feb-2020 09:50:26 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[11-Feb-2020 09:50:43 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[11-Feb-2020 09:50:44 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[11-Feb-2020 09:51:23 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[11-Feb-2020 10:10:36 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[11-Feb-2020 10:11:20 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[11-Feb-2020 10:27:49 UTC] PHP Parse error:  syntax error, unexpected 'articleLink' (T_STRING) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ArticleWidget/view/frontend/templates/article.phtml on line 1
+[14-Feb-2020 13:53:49 UTC] PHP Fatal error:  Uncaught Error: Cannot instantiate interface Temando\Shipping\Model\ResourceModel\Repository\PackagingRepositoryInterface in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:121
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Temando\\Shippin...', Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('Temando\\Shippin...')
+#2 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(79): Magento\Framework\ObjectManager\Factory\Compiled->get('Temando\\Shippin...')
+#3 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Compiled->create('Temando\\Shippin...', Array)
+#4 /home/somersetandwood/publi in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 121
+[14-Feb-2020 13:53:52 UTC] PHP Fatal error:  Uncaught Error: Cannot instantiate interface Temando\Shipping\Model\ResourceModel\Repository\PackagingRepositoryInterface in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:121
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Temando\\Shippin...', Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('Temando\\Shippin...')
+#2 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(79): Magento\Framework\ObjectManager\Factory\Compiled->get('Temando\\Shippin...')
+#3 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Compiled->create('Temando\\Shippin...', Array)
+#4 /home/somersetandwood/publi in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 121
+[14-Feb-2020 13:54:01 UTC] PHP Fatal error:  Uncaught Error: Cannot instantiate interface Temando\Shipping\Model\ResourceModel\Repository\PackagingRepositoryInterface in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:121
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Temando\\Shippin...', Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('Temando\\Shippin...')
+#2 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(79): Magento\Framework\ObjectManager\Factory\Compiled->get('Temando\\Shippin...')
+#3 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Compiled->create('Temando\\Shippin...', Array)
+#4 /home/somersetandwood/publi in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 121
+[14-Feb-2020 13:54:09 UTC] PHP Fatal error:  Uncaught Error: Cannot instantiate interface Temando\Shipping\Model\ResourceModel\Repository\PackagingRepositoryInterface in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:121
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Temando\\Shippin...', Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('Temando\\Shippin...')
+#2 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(79): Magento\Framework\ObjectManager\Factory\Compiled->get('Temando\\Shippin...')
+#3 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Compiled->create('Temando\\Shippin...', Array)
+#4 /home/somersetandwood/publi in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 121
+[14-Feb-2020 13:54:41 UTC] PHP Fatal error:  Uncaught Error: Cannot instantiate interface Temando\Shipping\Model\ResourceModel\Repository\PackagingRepositoryInterface in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:121
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Temando\\Shippin...', Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('Temando\\Shippin...')
+#2 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(79): Magento\Framework\ObjectManager\Factory\Compiled->get('Temando\\Shippin...')
+#3 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Compiled->create('Temando\\Shippin...', Array)
+#4 /home/somersetandwood/publi in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 121
+[14-Feb-2020 14:00:16 UTC] PHP Fatal error:  Uncaught Error: Cannot instantiate interface Temando\Shipping\Model\ResourceModel\Repository\PackagingRepositoryInterface in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:121
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Temando\\Shippin...', Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('Temando\\Shippin...')
+#2 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(79): Magento\Framework\ObjectManager\Factory\Compiled->get('Temando\\Shippin...')
+#3 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Compiled->create('Temando\\Shippin...', Array)
+#4 /home/somersetandwood/publi in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 121
+[14-Feb-2020 14:12:20 UTC] PHP Fatal error:  Uncaught Error: Cannot instantiate interface Temando\Shipping\Model\ResourceModel\Repository\PackagingRepositoryInterface in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:121
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Temando\\Shippin...', Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('Temando\\Shippin...')
+#2 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(79): Magento\Framework\ObjectManager\Factory\Compiled->get('Temando\\Shippin...')
+#3 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Compiled->create('Temando\\Shippin...', Array)
+#4 /home/somersetandwood/publi in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 121
+[14-Feb-2020 14:29:43 UTC] PHP Fatal error:  Uncaught Error: Cannot instantiate interface Temando\Shipping\Model\ResourceModel\Repository\PackagingRepositoryInterface in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:121
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Temando\\Shippin...', Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('Temando\\Shippin...')
+#2 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(79): Magento\Framework\ObjectManager\Factory\Compiled->get('Temando\\Shippin...')
+#3 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Compiled->create('Temando\\Shippin...', Array)
+#4 /home/somersetandwood/publi in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 121
+[14-Feb-2020 16:15:34 UTC] PHP Fatal error:  Uncaught Error: Cannot instantiate interface Temando\Shipping\Model\ResourceModel\Repository\PackagingRepositoryInterface in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:121
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Temando\\Shippin...', Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('Temando\\Shippin...')
+#2 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(79): Magento\Framework\ObjectManager\Factory\Compiled->get('Temando\\Shippin...')
+#3 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/ObjectManager.php(56): Magento\Framework\ObjectManager\Factory\Compiled->create('Temando\\Shippin...', Array)
+#4 /home/somersetandwood/publi in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 121
+[18-Mar-2020 11:53:33 UTC] PHP Warning:  proc_open(): fork failed - Cannot allocate memory in phar:///usr/local/bin/composer/vendor/symfony/console/Application.php on line 952

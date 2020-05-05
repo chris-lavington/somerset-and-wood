@@ -1,0 +1,148 @@
+<div class="oneColumnCentre">
+<div class="newsletter-manage-container"> 
+<?php
+if($_POST) {
+	if($_POST['email'] !="") {
+		$subscriber_email = $_POST['email'];
+		$apiKey = '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';
+		$apiKey = trim($apiKey);
+		$sg = new \SendGrid($apiKey);
+		$list_id = "2874373";
+        $response = $sg->client->contactdb()->lists()->_($list_id)->recipients()->get(null, null);
+		// echo $response->statusCode();
+		// echo '<pre>'.$response->body().'</pre>';
+		// print_r($response->headers());
+		$body_array = json_decode($response->body(),true);
+		$recipients_array = $body_array['recipients'];
+		$subscribed = false;
+		foreach ($recipients_array as $recipient) {
+            if ($subscriber_email === $recipient['email']) {
+                $subscribed = true;
+                $subscriber_email_id = $recipient['id'];
+            }
+        } 
+
+		if($subscribed===true) {
+			echo '<h3>Subscribed</h3><p>The email address '.$subscriber_email.' is already subscribed to the Somerset&nbsp;&amp;&nbsp;Wood&nbsp;Fine&nbsp;Art&nbsp;Newsletter.</p><p><a class="sw-btn-base sw-btn-secondary sw-fill-secondary" href="/customer/account/"><i class="feather icon-arrow-left"></i>Back to account overview</a></p>';
+		} else {
+			$opt_in = urlencode('yes');
+			$today = urlencode(date("Y-m-d"));
+			$address = urlencode($subscriber_email);
+			$querystring = "dateSent=".$today."&address=".$address;
+			$password = "kepler-186f";
+			function encrypt($querystring, $password) {
+			    $method = "AES-256-CBC";
+			    $key = hash('sha256', $password, true);
+			    $iv = openssl_random_pseudo_bytes(16);
+
+			    $ciphertext = openssl_encrypt($querystring, $method, $key, OPENSSL_RAW_DATA, $iv);
+			    $hash = hash_hmac('sha256', $ciphertext, $key, true);
+
+			    return $iv . $hash . $ciphertext;
+			}
+
+			//$encrypted_query_string = encryptLink($today,$address);
+			$encrypted_query_string = encrypt($querystring,$password);
+			$encrypted_query_string_base64 = base64_encode($encrypted_query_string);
+			//$unencrypted = $querystring;
+
+			$success_url_front = 'https://'.$_SERVER["HTTP_HOST"];
+
+			$success_url = $success_url_front."/subscribe/newsletter/success?".$encrypted_query_string_base64."";
+
+			//$link = '<a style="color: #373d3f; text-decoration: underline; cursor: pointer;" href="'.$success_url.'">this link</a>';
+			//$mail_text = '<p>Thank you for subscribing to the Somerset & Wood Fine Art newsletter. Please click '.$link.' to confirm your email address.</p><p>Thank you,<br/>Somerset & Wood Fine Art.</p>';
+			$link = "<a style='color: #373d3f; text-decoration: underline; cursor: pointer;' href=".$success_url.">this link</a>";
+			$mail_text = "<p style='margin-bottom:14px;'>Welcome,</p><p style='margin-bottom:14px;'>To activate your subscription, please click ".$link." to confirm your email address.</p><p style='margin-bottom:14px;'>Thank you,</p><p style='margin-bottom:14px;'>Somerset & Wood Fine Art</p>";
+			$template_id = "7b92406b-8ad4-45fc-bfef-8362ca51f61d";
+			$request_body = json_decode('{
+			  "content": [
+			    {
+			      "type": "text/html",
+			      "value": "'.$mail_text.'"
+			    }
+			  ],
+			  "from": {
+			    "email": "noreply@somersetandwood.com",
+			    "name": "Somerset & Wood Notification"
+			  },
+			  "mail_settings": {
+			    "sandbox_mode": {
+			      "enable": false
+			    }
+			  },
+			  "personalizations": [
+			    {
+			      "custom_args": {
+			        "type": "optIn",
+			        "time_sent": "'.date("Y-m-d").'"
+			      },
+			      "headers": {
+			        "X-Accept-Language": "en",
+			        "X-Mailer": "S&W newsletter subscribtion confirmation email"
+			      },
+			      "subject": "Somerset & Wood Fine Art: Please confirm your subscription email address",
+			      "substitutions": {
+			        "link_insert": "'.$link.'"
+			      },
+			      "to": [
+			        {
+			          "email": "'.$subscriber_email.'"
+			        }
+			      ]
+			    }
+			  ],
+			  "template_id": "'.$template_id.'",
+			  "tracking_settings": {
+			    "click_tracking": {
+			      "enable": true,
+			      "enable_text": true
+			    },
+			    "open_tracking": {
+			      "enable": true,
+			      "substitution_tag": "%opentrack"
+			    },
+			    "subscription_tracking": {
+			      "enable": false,
+			      "html": "If you would like to unsubscribe and stop receiving these emails <% clickhere %>.",
+			      "substitution_tag": "<%click here%>",
+			      "text": "If you would like to unsubscribe and stop receiving these emails <% click here %>."
+			    }
+			  }
+			}');
+			$response = $sg->client->mail()->send()->post($request_body);
+
+			echo '<h3>Please Confirm your Email Address</h3><p>To activate your subscription, please check your inbox for an email to confirm your email address. If you cannot see the email, please check your Spam / Junk folder.</p><p>Thank you.</p><p><a class="sw-btn-base sw-btn-secondary sw-fill-secondary" href="/customer/account/"><i class="feather icon-arrow-left"></i>Back to account overview</a></p>';
+			 // echo '<pre>'.$response->statusCode().'</pre>';
+			 // echo '<pre>'.$response->body().'</pre>';
+			 // echo '<pre>';
+			 // print_r($response->headers());
+			 // echo '</pre>';
+			 // echo '<pre>'.$success_url.'</pre>';
+		}
+	} 
+} else {
+	echo '<h3>Subscribe to our Newsletter</h3><p>You have reached this page without entering your email address.</p><p> Subscribe to our newsletter here:</p>';
+?>
+
+<form class="form subscribe newsletter-validate-detail"
+    novalidate
+    action="<?= $block->escapeUrl('/subscribe/newsletter/confirm/') ?>"
+    method="post"
+    data-mage-init='{"validation": {"errorClass": "mage-error"}}'>
+    <div class="field newsletter">
+        <div class="control">
+            <input name="email" type="email" id="newsletter"
+                        placeholder="<?= $block->escapeHtmlAttr(__('Enter your email address')) ?>"
+                        data-validate="{required:true, 'validate-email':true}"/>
+        </div>
+    </div>
+    <div class="actions">
+        <button class="action subscribe primary action sw-btn-base sw-btn-primary sw-fill-out" title="<?= $block->escapeHtmlAttr(__('Subscribe')) ?>" type="submit">
+            <span><?= $block->escapeHtml(__('Subscribe')) ?></span>
+        </button>
+    </div>                
+</form>
+</div>
+</div>
+<?php } ?>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+        	<referenceBlock name="breadcrumbs">
+                <action method="addCrumb">
+                    <argument name="crumbName" xsi:type="string">Home</argument>
+                    <argument name="crumbInfo" xsi:type="array">
+                        <item name="title" xsi:type="string">Home</item>
+                        <item name="label" xsi:type="string">Home</item>
+                        <item name="link" xsi:type="string">/</item>
+                    </argument>
+                </action>
+                <action method="addCrumb">
+                    <argument name="crumbName" xsi:type="string">My Account</argument>
+                    <argument name="crumbInfo" xsi:type="array">
+                        <item name="title" xsi:type="string">My Account</item>
+                        <item name="label" xsi:type="string">My Account</item>
+                        <item name="link" xsi:type="string">/customer/account/</item>                        
+                    </argument>
+                </action>
+                <action method="addCrumb">
+                    <argument name="crumbName" xsi:type="string">Newsletter Confirm</argument>
+                    <argument name="crumbInfo" xsi:type="array">
+                        <item name="title" xsi:type="string">Newsletter Confirm</item>
+                        <item name="label" xsi:type="string">Newsletter Confirm</item>
+                    </argument>
+                </action>
+            </referenceBlock>
+            <block class="SomersetWood\Newsletter\Block\Confirm" name="confirm" cacheable="false" template="confirm.phtml">
+            </block>
+        </referenceContainer>
+    </body>
+</page>

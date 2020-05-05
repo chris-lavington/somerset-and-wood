@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config>
+    <type name="Magento\Wishlist\Block">
+        <plugin name="MyGalleryLink" type="\SomersetWood\MyGallery\MyGalleryLink\LinkPlugin" sortOrder="1" disabled="false"/>
+    </type>
+</config>

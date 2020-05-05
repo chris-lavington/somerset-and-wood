@@ -1,0 +1,16 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="css/somersetandwood-webfonts.css"/>
+        <css src="css/lightslider.css"/>
+        <css src="css/bootstrap.css" />
+        <css src="css/iconfont.css" />
+        <css src="css/slicknav.css" />
+        <!-- <css src="css/ie-11-gridfix-m.css" />
+        <css src="css/ie-11-gridfix-l.css" /> -->
+        <css src="css/ie-fix.css" />
+		<link src="js/main.js"/>
+        <!-- external js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/plugins/native-loading/ls.native-loading.min.js" src_type="url" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" src_type="url" />
+    </head>
+</page>

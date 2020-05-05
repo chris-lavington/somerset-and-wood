@@ -1,0 +1,26 @@
+<?php if ($detailedInfoGroup = $block->getGroupChildNames('summary1', 'getChildHtml')):?>
+    <div class="product info summary1">
+        <?php $layout = $block->getLayout(); ?>
+<pre><?php var_dump($detailedInfoGroup); ?></pre>
+		<ul class="summary1-content">
+			<?php foreach ($detailedInfoGroup as $name):?>
+				<?php
+					$html = $layout->renderElement($name);
+					// if (!trim($html)) {
+					// 	continue;
+					// }
+					$alias = $layout->getElementAlias($name);
+					echo '<pre>'.$alias.'</pre>';
+					$label = $block->getChildData($alias, 'title');
+					echo '<pre>'.$label.'</pre>';
+				?>
+
+				<?php if ($html !='') { ?>
+				<li>
+					<?php /* @escapeNotVerified */ echo '<strong>'.$label.': </strong>'.$html; ?>
+				</li>
+				<?php } ?>
+			<?php endforeach;?>
+		</ul>
+   </div>
+<?php endif; ?>

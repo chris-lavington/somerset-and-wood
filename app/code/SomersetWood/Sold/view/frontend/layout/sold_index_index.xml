@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column-sort-fix" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>
+            Previously Sold
+        </title>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="SomersetWood\Sold\Block\Index\Index" name="index.index" template="SomersetWood_Sold::index/index.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

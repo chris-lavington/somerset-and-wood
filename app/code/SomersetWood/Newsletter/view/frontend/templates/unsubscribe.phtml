@@ -1,0 +1,78 @@
+<div class="oneColumnCentre">
+<div class="newsletter-manage-container">
+<?php
+if($_POST) {
+	if($_POST['unsubscribe_id'] !="") {
+		$unsubscribe_id = $_POST['unsubscribe_id'];
+		$customerEmail = $_POST['customer_email'];
+		$apiKey = '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';
+		$sg = new \SendGrid($apiKey);
+		
+		$request_body = json_decode('[
+		  "'.$unsubscribe_id.'"
+		]');
+		$response = $sg->client->contactdb()->recipients()->delete($request_body);
+		// echo $response->statusCode();
+		// echo $response->body();
+		// print_r($response->headers());
+		echo '<h3>Unsubscription Confirmed</h3><p >'.$customerEmail.' has been successfully unsubscribed from the Somerset & Wood Fine Art newsletter list.</p><p><a class="sw-btn-base sw-btn-secondary sw-fill-secondary" href="/customer/account/"><i class="feather icon-arrow-left"></i>Back to account overview</a></p>';
+			$mail_text = "<p style='margin-bottom:14px;'><span style='color: #373d3f; text-decoration: underline; cursor: pointer;''>".$customerEmail."</span> has been successfully unsubscribed from the Somerset&nbsp;&amp;&nbsp;Wood&nbsp;Fine&nbsp;Art&nbsp;newsletter.</p>";
+			$template_id = "7b92406b-8ad4-45fc-bfef-8362ca51f61d";
+			$request_body = json_decode('{
+			  "content": [
+			    {
+			      "type": "text/html",
+			      "value": "'.$mail_text.'"
+			    }
+			  ],
+			  "from": {
+			    "email": "noreply@somersetandwood.com",
+			    "name": "Somerset & Wood Notification"
+			  },
+			  "mail_settings": {
+			    "sandbox_mode": {
+			      "enable": false
+			    }
+			  },
+			  "personalizations": [
+			    {
+			      "custom_args": {
+			        "type": "optIn",
+			        "time_sent": "'.date("Y-m-d").'"
+			      },
+			      "headers": {
+			        "X-Accept-Language": "en",
+			        "X-Mailer": "S&W newsletter subscribtion confirmation email"
+			      },
+			      "subject": "Somerset & Wood Fine Art: You have unsubscribed from our newsletter",
+			      "to": [
+			        {
+			          "email": "'.$customerEmail.'"
+			        }
+			      ]
+			    }
+			  ],
+			  "template_id": "'.$template_id.'",
+			  "tracking_settings": {
+			    "click_tracking": {
+			      "enable": true,
+			      "enable_text": true
+			    },
+			    "open_tracking": {
+			      "enable": true,
+			      "substitution_tag": "%opentrack"
+			    },
+			    "subscription_tracking": {
+			      "enable": false,
+			      "html": "If you would like to unsubscribe and stop receiving these emails <% clickhere %>.",
+			      "substitution_tag": "<%click here%>",
+			      "text": "If you would like to unsubscribe and stop receiving these emails <% click here %>."
+			    }
+			  }
+			}');
+			$response = $sg->client->mail()->send()->post($request_body);
+	}
+}
+?>
+</div>
+</div>

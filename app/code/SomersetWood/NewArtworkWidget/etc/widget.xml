@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+	<widget class="SomersetWood\NewArtworkWidget\Block\NewArtwork" id="somersetwood_newartworkwidget_newartworkwidget">
+		<label>SW New Artwork Widget</label>
+		<description></description>
+		<parameters>
+			<parameter name="newartworkimage" xsi:type="block" visible="true" sort_order="100" required="true">
+	            <label translate="true">Image</label>
+	            <block class="Staempfli\WidgetExtraFields\Block\Adminhtml\ImageField"/>
+	        </parameter>
+	        <parameter name="newartworklink" sort_order="11" required="false" visible="true" xsi:type="text">
+				<label>Link</label>
+			</parameter>
+	        <parameter name="newartworktitle" sort_order="10" required="false" visible="true" xsi:type="text">
+				<label>Title</label>
+			</parameter>
+	        <parameter name="newartworktext" xsi:type="block" required="false" visible="true" sort_order="3">
+	            <label translate="true">Text</label>
+	            <block class="SomersetWood\NewArtworkWidget\Block\Adminhtml\Widget\TextField"/>
+	        </parameter> 
+		</parameters>
+	</widget>
+</widgets>

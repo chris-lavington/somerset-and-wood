@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+    </head>
+    <body>
+        <referenceContainer name="content">
+        	<referenceContainer name="product.info.main">
+                <referenceContainer name="product.info.collection">
+                    <block class="SomersetWood\ProductDetailCategoryLinks\Block\Product\View\CategoryLinks" before="-" name="product.info.collection.links" template="SomersetWood_ProductDetailCategoryLinks::product/view/top-collection-links.phtml"/>
+                </referenceContainer>
+	            <referenceContainer name="product.long.description">
+	                <block class="SomersetWood\ProductDetailCategoryLinks\Block\Product\View\CategoryLinks" before="product.info.details" name="product.detail.collection.heading" template="SomersetWood_ProductDetailCategoryLinks::product/view/long-description-collection-heading.phtml"/>
+                    <block class="SomersetWood\ProductDetailCategoryLinks\Block\Product\View\CategoryLinks" after="product.info.details" name="product.detail.category.links" template="SomersetWood_ProductDetailCategoryLinks::product/view/long-description-collection-links.phtml"/>
+	             </referenceContainer>
+	        </referenceContainer>
+        </referenceContainer>
+    </body>
+</page>

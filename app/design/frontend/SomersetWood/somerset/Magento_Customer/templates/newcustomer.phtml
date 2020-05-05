@@ -1,0 +1,17 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var \Magento\Customer\Block\Form\Login\Info $block */
+?>
+<?php if ($block->getRegistration()->isAllowed()): ?>
+<div class="block-new-customer">
+    <h4>New to Somerset & Wood?</h4>
+    <p>Sign up for an account to take advantage of order tracking and history as well as pre-filled forms during checkout on subsequent orders.</p>
+    <p><a href="<?= $block->escapeUrl($block->getCreateAccountUrl()) ?>" class=""><button class="sw-btn-base sw-btn-secondary sw-fill-secondary"><span><?= $block->escapeHtml(__('create an account')) ?></span></button></a></p>
+</div>
+<?php endif; ?>

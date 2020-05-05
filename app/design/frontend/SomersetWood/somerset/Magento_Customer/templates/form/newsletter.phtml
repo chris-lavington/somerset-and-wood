@@ -1,0 +1,87 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var \Magento\Customer\Block\Newsletter $block */
+?>
+<h3>Newsletter Subscription</h3>
+<?php 
+
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$customerSession = $objectManager->create('Magento\Customer\Model\Session');
+if ($customerSession->isLoggedIn()) {    
+    $customerEmail = $customerSession->getCustomer()->getEmail();
+    $apiKey = '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';
+        $sg = new \SendGrid($apiKey);
+        $list_id = "2874373";
+        $response = $sg->client->contactdb()->lists()->_($list_id)->recipients()->get(null, null);
+        $body_array = json_decode($response->body(),true);
+        $recipients_array = $body_array['recipients'];
+        $subscribed = false;
+      
+        foreach ($recipients_array as $recipient) { 
+            if ($customerEmail === $recipient['email']) {
+                $subscribed = true;
+                $subscriber_email_id = $recipient['id'];
+            }
+        }   
+
+    //unsubscribe fom list
+    if ($subscribed===true) {
+    ?>
+        <p>You are subscribed to the Somerset &amp; Wood Fine Art newsletter with the following email address:</p>
+        <p><?php echo $customerEmail; ?></p>
+        <hr>
+        <p>If you wish to unsubscribe, please click the button below:</p>
+        <form class="form subscribe"
+            novalidate
+            action="<?= $block->escapeUrl('/subscribe/newsletter/unsubscribe/') ?>"
+            method="post"
+            data-mage-init='{"validation": {"errorClass": "mage-error"}}'
+            id="newsletter-validate-detail">
+                <input type="hidden" value="<?= $subscriber_email_id ?>" name="unsubscribe_id" />
+                <input type="hidden" value="<?= $customerEmail ?>" name="customer_email" />
+                <div class="actions">
+                    <button class="action subscribe primary sw-btn-base sw-btn-secondary sw-fill-secondary" title="<?= $block->escapeHtmlAttr(__('Unsubscribe')) ?>" type="submit">
+                        <span><?= $block->escapeHtml(__('Unsubscribe')) ?></span>
+                    </button>
+                </div>                
+        </form>
+    <?php
+    }
+  
+        if($subscribed === false) {
+
+        ?>
+        <p>You are not subscribed to the Somerset &amp; Wood Fine Art newletter.</p>
+        <p>If you would like to receive news of our latest artwork and offers, please enter your email address below:</p>
+        <form class="form subscribe"
+            novalidate
+            action="<?= $block->escapeUrl('/subscribe/newsletter/confirm/') ?>"
+            method="post"
+            data-mage-init='{"validation": {"errorClass": "mage-error"}}'
+            id="newsletter-validate-detail">
+                <div class="field newsletter">
+                    <div class="control">
+                        <input name="email" type="email" id="newsletter"
+                                    placeholder="<?= $block->escapeHtmlAttr(__('Enter your email address')) ?>"
+                                    data-validate="{required:true, 'validate-email':true}"/>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button class="action subscribe primary sw-btn-base sw-btn-primary sw-fill-out" title="<?= $block->escapeHtmlAttr(__('Subscribe')) ?>" type="submit">
+                        <span><?= $block->escapeHtml(__('Subscribe')) ?></span>
+                    </button>
+                </div>               
+        </form>
+        <small>We respect your privacy and will never share your details with a third party.</small>
+        <?php
+
+        }
+}
+?>
+

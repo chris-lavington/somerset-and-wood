@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd" label="Customer My Account (All Pages)" design_abstraction="custom">
+    <body>
+        <!-- dashboard -->
+        <move element="customer-account-navigation-account-link" destination="customer_account_navigation" before="-" />
+
+        <!-- information -->
+        <move element="customer-account-navigation-account-edit-link" destination="customer_account_navigation" after="customer-account-navigation-account-link" />
+
+        <!-- my addresses -->
+        <move element="customer-account-navigation-address-link" destination="customer_account_navigation" after="customer-account-navigation-account-edit-link" />
+
+        <!-- Orders link -->
+        <move element="customer-account-navigation-orders-link" destination="customer_account_navigation" after="customer-account-navigation-address-link" />
+
+        <!-- Store credit -->
+        <!-- <move element="customer-account-navigation-customer-balance-link" destination="customer_account_navigation" after="customer-account-navigation-orders-link" />  -->
+
+        <!-- My credit card link -->
+        <move element="customer-account-navigation-my-credit-cards-link" destination="customer_account_navigation" after="customer-account-navigation-orders-link" />
+
+        <!-- Subscription link -->
+        <move element="customer-account-navigation-newsletter-subscriptions-link" destination="customer_account_navigation" after="customer-account-navigation-my-credit-cards-link" />
+
+        <!-- Wish list (My Gallery) link -->
+        <move element="customer-account-navigation-wish-list-link" destination="customer_account_navigation" after="customer-account-navigation-newsletter-subscriptions-link" />
+
+
+        <attribute name="class" value="account"/>
+        <referenceContainer name="sidebar.main">
+            <!-- remove My Gallery -->
+            <block class="Magento\Framework\View\Element\Html\Links" name="customer_account_navigation" before="-" template="Magento_Customer::account/navigation.phtml" cacheable="false">
+                
+            <!-- Remove unwanted account navigation links -->
+        
+                <!-- Order by SKU -->
+                <referenceBlock name="customer-account-navigation-checkout-sku-link" remove="false"/>
+
+                <!-- Downloadable product link -->
+                <referenceBlock name="customer-account-navigation-downloadable-products-link" remove="true"/>
+
+                 <!-- Billing agreement link -->
+                <referenceBlock name="customer-account-navigation-billing-agreements-link" remove="true"/>
+
+                <!-- Product review link -->
+                <referenceBlock name="customer-account-navigation-product-reviews-link" remove="true"/> 
+
+                <!-- Gift card link -->
+                <referenceBlock name="customer-account-navigation-gift-card-link" remove="true"/>
+
+                <!-- Gift registry -->
+                <referenceBlock name="customer-account-navigation-giftregistry-link" remove="true"/>
+
+                <!-- Reward points -->
+                <referenceBlock name="customer-account-navigation-reward-link" remove="true"/>
+
+            </block>
+        </referenceContainer>
+        <referenceBlock name="page.main.title" remove="true" />
+    </body>
+</page>

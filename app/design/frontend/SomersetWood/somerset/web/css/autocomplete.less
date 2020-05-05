@@ -1,0 +1,50 @@
+//variables
+@base-color : #B7BEB4;
+@hover-color : darken(@base-color, 10%);
+@background-color: white;
+@select-color: ;
+.search-autocomplete {
+	background-color: @background-color;
+	border: 1px solid #eee;
+	z-index: 999;
+	dl { 
+		padding: 5px; 
+		dt {
+			cursor: default;
+            margin: 0;
+            padding: 3px;
+            position: relative;
+            text-align: left;
+            white-space: normal;
+            &:first-child {
+                border-top: none;
+            }
+			&:hover,
+            &.selected {
+               background-color: @hover-color; 
+            }
+		}
+		dd {
+			cursor: pointer;
+            margin: 0;
+            padding: 3px;
+            position: relative;
+            text-align: left;
+            white-space: normal;
+            &:first-child {
+                border-top: none;
+            }
+			&:hover,
+			&.selected {
+				background-color: @hover-color; 
+			}
+			.product-image-box {
+				float: left;
+				margin-right: 5px;
+			}
+			.clear {
+                clear:both;
+            }
+		}
+	}
+}

@@ -1,0 +1,337 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Sales Module Styles
+//  _____________________________________________
+
+.email-intro {
+   td:first-child {
+        padding-bottom: 30px;
+   } 
+}
+
+.email-summary {
+    border-top: 1px solid #eeeeee;
+    td:first-child {
+        padding: 30px 0;
+    }
+}
+
+.email-information {
+    border-top: 1px solid #eeeeee;
+    //border-bottom: 1px solid #eeeeee;
+    td:first-child {
+        padding: 30px 0 0 0;
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xs) {
+    //  Shrink order number in order email so it will fit on single line on small screens
+    .email-summary {
+    }
+}
+
+//
+// Product Details
+// -----------------------------------------------
+
+.order-items {
+    .product-details {
+        td {
+            vertical-align: middle;
+        }
+        .product-title {
+            padding: 0 10px;
+        }
+    }
+    td.item-price {
+        vertical-align: middle !important;
+    }
+}
+
+//
+//  Order Summary
+//  ----------------------------------------------
+
+.order-details {
+    width: 100%;
+    margin: 0 0 20px 0;
+    tr {
+        > .address-details {
+            padding: 0 0 30px 0;
+            width: 50%;
+
+            h4 {
+                margin-top: 0;
+            }
+        }
+
+        > .method-info {
+            padding: 0 0 30px 0;
+            width: 50%;
+
+            h4 {
+                margin-top: 0;
+            }
+        }
+
+        > .order-comment {
+            padding: 0 0 30px 0;
+            width: 50%;
+
+            h4 {
+                margin-top: 0;
+            }
+        }
+
+        //  Prevent extra spacing on Payment & Shipping Method row
+        & + .method-info {
+            > td {
+                padding: 0;
+            }
+        }
+    }
+
+    .payment-method {
+        margin-bottom: 10px;
+        font-weight: normal;
+        .title {
+            font-weight: normal;
+        }
+
+        .data.table {
+            > caption {
+                display: none;
+            }
+
+            th {
+                padding-right: 10px;
+                font-weight: normal;
+            }
+            tr > td {
+                color: #373d3f !important;
+                &:hover {
+                   color: #373d3f !important;
+                   text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+//  Remove address and phone number link color on iOS
+.address-details a {
+    &:extend(.no-link a);
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xs) {
+    //  Stack columns
+    .order-details {
+        .address-details,
+        .method-info {
+            display: block;
+            padding: @email-content__padding__base 0 !important;
+            width: auto !important;
+
+            h4 {
+                margin-bottom: @indent__xs !important;
+                margin-top: 0 !important;
+            }
+        }
+    }
+}
+
+//
+//  Shipment Tracking
+//  ----------------------------------------------
+
+.shipment-track {
+    margin-bottom: 30px;
+    .lib-table(@table__width, 0);
+
+    thead,
+    tbody {
+        > tr {
+           th {
+            font-weight: 500;
+           }
+            > th,
+            > td {
+                background-color: none;
+                padding: 0;
+                width: 50%;
+            }
+            td:first-child {
+                padding: 0;
+            }
+
+            & + tr {
+                th,
+                td {
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+}
+
+//
+//  Items Table
+//  ----------------------------------------------
+
+.email-items {
+    .lib-table(@table__width, 0);
+    border: 1px solid #cccccc;
+    margin: 20px 0 30px 0;
+    thead,
+    tfoot {
+        > tr {
+            > th,
+            > td {
+                background-color: none;
+            }
+        }
+    }
+
+    > thead,
+    > tbody {
+        > tr {
+            > th {
+                padding: 10px;
+            }
+
+            > td {
+                padding: 10px;
+
+                &.message-gift {
+                    border-top: none;
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+
+    > tbody,
+    > tfoot {
+        > tr {
+            > th,
+            > td {
+                border-top: 1px solid #cccccc;
+            }
+
+            & + tr {
+                > th,
+                > td {
+                    border-top: 0;
+                }
+            }
+        }
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .product-name {
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
+
+    .has-extra .sku {
+        margin-bottom: 10px;
+    }
+
+    .item-info {
+        font-weight: normal;
+        dl {
+            margin-bottom: 0;
+            padding-left: 10px;
+
+            dt,
+            dd {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+
+            dd {
+                padding-left: 10px;
+            }
+        }
+    }
+    td.item-info {
+        padding: 10px;
+    }
+    
+    .item-qty {
+        font-weight: normal;
+        text-align: center;
+       // display: none !important;
+       font-size: 0;
+
+    }
+
+    .product-details {
+        td {
+            vertical-align: middle;
+        }
+        .product-title {
+            padding: 0 10px;
+        }
+    }
+
+    td.item-price {
+        vertical-align: middle !important;
+    }
+
+    .item-price,
+    .item-subtotal {
+        text-align: right;
+        font-weight: normal;
+    }
+
+    .item-extra {
+        padding-top: 0;
+    }
+
+    .item-options {
+        dt {
+            font-weight: normal;
+        }
+    }
+
+    .order-totals {
+        > tr {
+            > th {
+                font-weight: normal;
+            }
+
+            > th,
+            > td {
+                padding: 10px;
+                text-align: right;
+            }
+
+            & + tr {
+                th,
+                td {
+                    padding-top: 0;
+                }
+            }
+        }
+
+        .price {
+            white-space: nowrap;
+        }
+    }
+}
+
+
+
+.email-non-inline() {
+    .email-items {
+        .lib-table-overflow();
+    }
+}

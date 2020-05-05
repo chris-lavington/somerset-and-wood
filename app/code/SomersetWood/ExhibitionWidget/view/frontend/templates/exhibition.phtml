@@ -1,0 +1,28 @@
+<?php 
+	// check if URL is HTTP or HTTPS
+	if ( (! empty($_SERVER['REQUEST_SCHEME']) && $_SERVER['REQUEST_SCHEME'] == 'https') ||
+		     (! empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ||
+		     (! empty($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == '443') ) {
+		    $server_request_scheme = 'https';
+		} else {
+		    $server_request_scheme = 'http';
+		}
+
+	// form image URL
+	$imageUrl = $server_request_scheme.'://'.$_SERVER['SERVER_NAME'].'/pub/media/wysiwyg/exhibition/'.$block->getData('exhibitionImage') ;
+
+?>
+<div>
+	<a href="/<?php if($block->getData('exhibitionLink')) {echo $block->getData('exhibitionLink');} ?>">
+		<?php if($block->getData('exhibitionImage')) { ?>
+		 	<img src="<?php echo $imageUrl; ?>" width="357" />
+		<?php } ?>
+		<?php if($block->getData('exhibitionTitle')) { ?>
+			<h3><?php echo $block->getData('exhibitionTitle'); ?></h3>
+		<?php } ?>
+		<?php if($block->getData('exhibitionText')) { ?>
+			<p><?php echo $block->getData('exhibitionText'); ?></p>
+		<?php } ?>
+		<p><a class="read-more" href="/<?php if($block->getData('exhibitionLink')) {echo $block->getData('exhibitionLink');} ?>">View All</a></p>
+	</a>
+</div>

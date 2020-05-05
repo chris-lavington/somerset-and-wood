@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+    	<referenceContainer name="header.container">
+            <referenceBlock name="currency" remove="false"/>
+            <referenceContainer name="header.panel.wrapper" htmlClass="wrapper middle-header-container">
+                    <referenceContainer name="header.panel" htmlClass="header middle-header">
+                        <block class="Magento\Framework\View\Element\Html\Links" name="header.links">
+                            <arguments>
+                                <argument name="css_class" xsi:type="string">header links</argument>
+                            </arguments>
+                        </block>
+                    </referenceContainer>
+            </referenceContainer>
+            <block class="Magento\Framework\View\Element\Template" name="somersetnav" template="Magento_Theme::html/header/nav.phtml" />
+    	</referenceContainer>
+    	<referenceContainer name="page.top">
+    		<referenceBlock name="navigation.sections" remove="true"/>
+    	</referenceContainer>
+	   <referenceBlock name="sale.reorder.sidebar" remove="true"/>
+       <referenceBlock name="wishlist_sidebar" remove="true"/>
+       <referenceContainer name="footer-container">
+            <referenceBlock name="footer_links" remove="true" />
+            <container name="footer-top" htmlTag="div" htmlClass="footer-top">
+                <block class="Magento\Theme\Block\Html\Footer" name="sw-footer" template="Magento_Theme::html/sw-footer.phtml"/>
+            </container>
+            <block name="sw-copyright" template="Magento_Theme::html/sw-copyright.phtml"/> 
+            <referenceBlock name="copyright"  remove="true"/> 
+            <referenceBlock name="report.bugs" remove="true"/>
+        </referenceContainer>
+        <!-- <move element="top.search" destination="header.panel" after="header.panel" /> -->
+        <move element="top.search" destination="header.panel" before="-" />
+        <move element="minicart" destination="header.panel" after="-" />
+    </body>
+</page>

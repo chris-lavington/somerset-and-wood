@@ -1,0 +1,45 @@
+<?php 
+    $categories = $block->getCategories(68);
+    $_imageHelper = $this->helper(Magento\Catalog\Helper\Image::class);
+    $placeholder_image = '/media/logo/default/somersetandwood-placeholder-compressed.png';
+?>
+<nav id="themed-links" class="navbar sticky-top navbar-light">
+    <?php
+       foreach(range('A','Z') as $letterhead) { 
+          echo '<div><a href="#'.strtolower($letterhead).'">'.$letterhead.'</a></div>';
+        } 
+    ?>
+</nav>
+<div data-spy="scroll" data-target="#themed-links" data-offset="0">
+    <div class="category-image-container">
+        <?php
+            $i=0;
+            foreach ($categories as $category) {
+                $title = $category->getName();
+                $id = $category->getId();
+                $url = $category->getUrl();
+                $categoryParticulars = $block->getCategory($id);
+                $productImageURL = $categoryParticulars->getImageUrl();
+                $themed_collection_anchor = $category->getData('meta_keywords');
+                $themed_collection_group = $category->getData('meta_description');
+        ?>
+            <div id="<?= $themed_collection_anchor; ?>" class="category-image-item category-offset<?php if($themed_collection_group !='') { echo ' category-group-'.$themed_collection_group; } ?>">
+                <div class="cat-image">
+                    <a href="<?= $url ?>">
+                        <?php if ($productImageURL!='') { ?>
+                        <img class="lazyload" loading="lazy" data-src="<?= $productImageURL; ?>" data-srcset="<?= $productImageURL; ?>" />
+                    <?php } ?>
+                    </a>
+                </div>
+                <div class="info">
+                    <h4><a href="<?= $url ?>">
+                        <?php echo $title; ?></a>
+                    </h4>
+                </div>                    
+            </div>
+        <?php 
+        ++$i;
+        }
+        ?>
+    </div>
+</div>

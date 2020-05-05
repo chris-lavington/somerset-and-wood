@@ -1,0 +1,699 @@
+[15-Feb-2020 18:16:33 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/design/frontend/SomersetWood/somerset/Magento_CatalogWidget/templates/product/widget/content/grid.phtml on line 1
+[15-Feb-2020 18:18:29 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/design/frontend/SomersetWood/somerset/Magento_CatalogWidget/templates/product/widget/content/grid.phtml on line 1
+[17-Feb-2020 16:02:57 UTC] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting ',' or ')' in /home/somersetandwood/public_html/app/code/SomersetWood/BlurbPrint/Controller/Adminhtml/Blurb/Index.php on line 134
+[22-Feb-2020 01:17:10 UTC] PHP Fatal error:  Out of memory (allocated 39845888) (tried to allocate 8192 bytes) in /home/somersetandwood/public_html/vendor/magento/framework/Image/Adapter/Gd2.php on line 376
+[22-Feb-2020 01:17:11 UTC] PHP Fatal error:  Out of memory (allocated 46137344) (tried to allocate 12288 bytes) in /home/somersetandwood/public_html/vendor/magento/framework/Image/Adapter/Gd2.php on line 376
+[22-Feb-2020 01:17:17 UTC] PHP Fatal error:  Out of memory (allocated 25165824) (tried to allocate 1441792 bytes) in /home/somersetandwood/public_html/vendor/magento/framework/Image/Adapter/Gd2.php on line 306
+[22-Feb-2020 01:17:18 UTC] PHP Fatal error:  Out of memory (allocated 31457280) (tried to allocate 12288 bytes) in /home/somersetandwood/public_html/vendor/magento/framework/Image/Adapter/Gd2.php on line 376
+[09-Mar-2020 12:48:54 UTC] PHP Fatal error:  Out of memory (allocated 83886080) (tried to allocate 20480 bytes) in /home/somersetandwood/public_html/generated/metadata/adminhtml.php on line 2
+[09-Mar-2020 12:48:54 UTC] PHP Fatal error:  Out of memory (allocated 81788928) (tried to allocate 266240 bytes) in /home/somersetandwood/public_html/generated/metadata/adminhtml.php on line 2
+[09-Mar-2020 12:54:02 UTC] PHP Fatal error:  Out of memory (allocated 41943040) (tried to allocate 4096 bytes) in /home/somersetandwood/public_html/generated/metadata/adminhtml.php on line 225851
+[09-Mar-2020 12:55:02 UTC] PHP Fatal error:  Out of memory (allocated 16777216) (tried to allocate 12288 bytes) in /home/somersetandwood/public_html/vendor/magento/framework/Serialize/Serializer/Serialize.php on line 42
+[09-Mar-2020 12:55:02 UTC] PHP Fatal error:  Out of memory (allocated 67108864) (tried to allocate 20480 bytes) in /home/somersetandwood/public_html/generated/metadata/adminhtml.php on line 2
+[11-Mar-2020 10:36:45 UTC] PHP Fatal error:  Uncaught LogicException: Module 'SomersetWood_ProductGallery' from '/home/somersetandwood/public_html/app/code/SomersetWood/ProductGallery' has been already defined in '/home/somersetandwood/public_html/app/code/SomersetWood/ProductGallery 2'. in /home/somersetandwood/public_html/vendor/magento/framework/Component/ComponentRegistrar.php:50
+Stack trace:
+#0 /home/somersetandwood/public_html/app/code/SomersetWood/ProductGallery/registration.php(5): Magento\Framework\Component\ComponentRegistrar::register('module', 'SomersetWood_Pr...', '/home/somerseta...')
+#1 /home/somersetandwood/public_html/app/etc/NonComposerComponentRegistration.php(29): require_once('/home/somerseta...')
+#2 [internal function]: Magento\NonComposerComponentRegistration\{closure}('/home/somerseta...')
+#3 /home/somersetandwood/public_html/app/etc/NonComposerComponentRegistration.php(29): array_map(Object(Closure), Array)
+#4 /home/somersetandwood/public_html/app/etc/NonComposerComponentRegistration.php(33): Magento\NonComposerComponentRegistra in /home/somersetandwood/public_html/vendor/magento/framework/Component/ComponentRegistrar.php on line 50
+[11-Mar-2020 10:37:45 UTC] PHP Fatal error:  Uncaught LogicException: Module 'SomersetWood_ProductGallery' from '/home/somersetandwood/public_html/app/code/SomersetWood/ProductDetailCategoryLinks' has been already defined in '/home/somersetandwood/public_html/app/code/SomersetWood/ProductGallery'. in /home/somersetandwood/public_html/vendor/magento/framework/Component/ComponentRegistrar.php:50
+Stack trace:
+#0 /home/somersetandwood/public_html/app/code/SomersetWood/ProductDetailCategoryLinks/registration.php(5): Magento\Framework\Component\ComponentRegistrar::register('module', 'SomersetWood_Pr...', '/home/somerseta...')
+#1 /home/somersetandwood/public_html/app/etc/NonComposerComponentRegistration.php(29): require_once('/home/somerseta...')
+#2 [internal function]: Magento\NonComposerComponentRegistration\{closure}('/home/somerseta...')
+#3 /home/somersetandwood/public_html/app/etc/NonComposerComponentRegistration.php(29): array_map(Object(Closure), Array)
+#4 /home/somersetandwood/public_html/app/etc/NonComposerComponentRegistration.php(33): Magento\NonCom in /home/somersetandwood/public_html/vendor/magento/framework/Component/ComponentRegistrar.php on line 50
+[11-Mar-2020 10:38:18 UTC] PHP Fatal error:  Uncaught LogicException: Module 'SomersetWood_ProductGallery' from '/home/somersetandwood/public_html/app/code/SomersetWood/ProductDetailCategoryLinks' has been already defined in '/home/somersetandwood/public_html/app/code/SomersetWood/ProductGallery'. in /home/somersetandwood/public_html/vendor/magento/framework/Component/ComponentRegistrar.php:50
+Stack trace:
+#0 /home/somersetandwood/public_html/app/code/SomersetWood/ProductDetailCategoryLinks/registration.php(5): Magento\Framework\Component\ComponentRegistrar::register('module', 'SomersetWood_Pr...', '/home/somerseta...')
+#1 /home/somersetandwood/public_html/app/etc/NonComposerComponentRegistration.php(29): require_once('/home/somerseta...')
+#2 [internal function]: Magento\NonComposerComponentRegistration\{closure}('/home/somerseta...')
+#3 /home/somersetandwood/public_html/app/etc/NonComposerComponentRegistration.php(29): array_map(Object(Closure), Array)
+#4 /home/somersetandwood/public_html/app/etc/NonComposerComponentRegistration.php(33): Magento\NonCom in /home/somersetandwood/public_html/vendor/magento/framework/Component/ComponentRegistrar.php on line 50
+[11-Mar-2020 12:11:49 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/categorylinks.phtml on line 1
+[11-Mar-2020 12:12:00 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/categorylinks.phtml on line 1
+[12-Mar-2020 09:06:36 UTC] PHP Fatal error:  Allowed memory size of 2147483648 bytes exhausted (tried to allocate 1608531968 bytes) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/categorylinks.phtml on line 1
+[12-Mar-2020 13:29:36 UTC] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-links.phtml on line 1
+[12-Mar-2020 13:29:42 UTC] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-links.phtml on line 1
+[12-Mar-2020 13:29:45 UTC] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-links.phtml on line 1
+[12-Mar-2020 13:29:53 UTC] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-links.phtml on line 1
+[12-Mar-2020 13:30:00 UTC] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-links.phtml on line 1
+[12-Mar-2020 13:30:14 UTC] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-links.phtml on line 1
+[12-Mar-2020 13:30:44 UTC] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-links.phtml on line 1
+[12-Mar-2020 13:30:50 UTC] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-links.phtml on line 1
+[12-Mar-2020 13:30:57 UTC] PHP Parse error:  syntax error, unexpected 'foreach' (T_FOREACH) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-links.phtml on line 1
+[12-Mar-2020 14:50:52 UTC] PHP Fatal error:  Allowed memory size of 2147483648 bytes exhausted (tried to allocate 1608531968 bytes) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-heading.phtml on line 1
+[12-Mar-2020 14:51:14 UTC] PHP Fatal error:  Out of memory (allocated 828375040) (tried to allocate 803225600 bytes) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-heading.phtml on line 1
+[12-Mar-2020 14:52:02 UTC] PHP Fatal error:  Allowed memory size of 2147483648 bytes exhausted (tried to allocate 1575477248 bytes) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-heading.phtml on line 1
+[12-Mar-2020 14:52:38 UTC] PHP Fatal error:  Allowed memory size of 2147483648 bytes exhausted (tried to allocate 1570701312 bytes) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-heading.phtml on line 1
+[12-Mar-2020 14:53:17 UTC] PHP Fatal error:  Out of memory (allocated 830472192) (tried to allocate 803213312 bytes) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-heading.phtml on line 1
+[12-Mar-2020 14:53:27 UTC] PHP Fatal error:  Out of memory (allocated 830472192) (tried to allocate 803213312 bytes) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-heading.phtml on line 1
+[12-Mar-2020 15:02:17 UTC] PHP Fatal error:  Out of memory (allocated 861929472) (tried to allocate 803225600 bytes) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-links.phtml on line 1
+[12-Mar-2020 15:02:18 UTC] PHP Fatal error:  Out of memory (allocated 857735168) (tried to allocate 803225600 bytes) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-links.phtml on line 1
+[12-Mar-2020 15:02:32 UTC] PHP Fatal error:  Out of memory (allocated 847233024) (tried to allocate 805306368 bytes) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-links.phtml on line 1
+[12-Mar-2020 15:02:35 UTC] PHP Fatal error:  Allowed memory size of 2147483648 bytes exhausted (tried to allocate 1608531968 bytes) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-links.phtml on line 1
+[12-Mar-2020 15:02:42 UTC] PHP Fatal error:  Allowed memory size of 2147483648 bytes exhausted (tried to allocate 1608531968 bytes) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-links.phtml on line 1
+[12-Mar-2020 15:02:45 UTC] PHP Fatal error:  Out of memory (allocated 813694976) (tried to allocate 803225600 bytes) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-links.phtml on line 1
+[12-Mar-2020 15:02:54 UTC] PHP Fatal error:  Out of memory (allocated 429916160) (tried to allocate 400572416 bytes) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-links.phtml on line 1
+[12-Mar-2020 15:02:55 UTC] PHP Fatal error:  Allowed memory size of 2147483648 bytes exhausted (tried to allocate 1608531968 bytes) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-links.phtml on line 1
+[12-Mar-2020 15:03:15 UTC] PHP Fatal error:  Out of memory (allocated 830472192) (tried to allocate 803225600 bytes) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-links.phtml on line 1
+[12-Mar-2020 15:03:19 UTC] PHP Fatal error:  Out of memory (allocated 876609536) (tried to allocate 803225600 bytes) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-links.phtml on line 1
+[12-Mar-2020 15:03:22 UTC] PHP Fatal error:  Out of memory (allocated 832569344) (tried to allocate 803225600 bytes) in /home/somersetandwood/public_html/var/view_preprocessed/pub/static/app/code/SomersetWood/ProductDetailCategoryLinks/view/frontend/templates/product/view/long-description-collection-links.phtml on line 1
+[10-Apr-2020 14:28:32 UTC] PHP Fatal error:  Uncaught Error: Class 'MageWorx\GeoIP\Helper\Customer' not found in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:121
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('MageWorx\\GeoIP\\...', Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('MageWorx\\GeoIP\\...')
+#2 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(79): Magento\Framework\ObjectManager\Factory\Compiled->get('MageWorx\\GeoIP\\...')
+#3 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/ObjectManager.php(70): Magento\Framework\ObjectManager\Factory\Compiled->create('MageWorx\\Curren...')
+#4 /home/somersetandwood/public_html/vendor/magento/framework/Interception/PluginList/Plugi in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 121
+[10-Apr-2020 14:28:32 UTC] PHP Fatal error:  Uncaught Error: Class 'MageWorx\GeoIP\Helper\Customer' not found in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:121
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('MageWorx\\GeoIP\\...', Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('MageWorx\\GeoIP\\...')
+#2 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(79): Magento\Framework\ObjectManager\Factory\Compiled->get('MageWorx\\GeoIP\\...')
+#3 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/ObjectManager.php(70): Magento\Framework\ObjectManager\Factory\Compiled->create('MageWorx\\Curren...')
+#4 /home/somersetandwood/public_html/vendor/magento/framework/Interception/PluginList/Plugi in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 121
+[10-Apr-2020 14:28:34 UTC] PHP Fatal error:  Uncaught Error: Class 'MageWorx\GeoIP\Helper\Customer' not found in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:121
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('MageWorx\\GeoIP\\...', Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('MageWorx\\GeoIP\\...')
+#2 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(79): Magento\Framework\ObjectManager\Factory\Compiled->get('MageWorx\\GeoIP\\...')
+#3 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/ObjectManager.php(70): Magento\Framework\ObjectManager\Factory\Compiled->create('MageWorx\\Curren...')
+#4 /home/somersetandwood/public_html/vendor/magento/framework/Interception/PluginList/Plugi in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 121
+[10-Apr-2020 14:28:34 UTC] PHP Fatal error:  Uncaught Error: Class 'MageWorx\GeoIP\Helper\Customer' not found in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php:121
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('MageWorx\\GeoIP\\...', Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(150): Magento\Framework\ObjectManager\Factory\Compiled->create('MageWorx\\GeoIP\\...')
+#2 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/Compiled.php(79): Magento\Framework\ObjectManager\Factory\Compiled->get('MageWorx\\GeoIP\\...')
+#3 /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/ObjectManager.php(70): Magento\Framework\ObjectManager\Factory\Compiled->create('MageWorx\\Curren...')
+#4 /home/somersetandwood/public_html/vendor/magento/framework/Interception/PluginList/Plugi in /home/somersetandwood/public_html/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 121
+[24-Apr-2020 07:12:28 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 09:12:36 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 09:36:00 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 09:41:44 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 10:21:47 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 10:21:52 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 10:22:14 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 10:34:21 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 10:35:13 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 10:51:09 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 11:26:11 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 12:36:45 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 12:50:33 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 12:55:35 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 12:55:39 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 12:56:05 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 12:56:40 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 12:57:10 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 13:28:07 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 13:32:43 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 13:59:55 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 14:18:02 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 14:20:19 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 14:49:03 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 14:56:00 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 14:56:31 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 15:06:36 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 15:06:37 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 15:27:35 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 15:31:06 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 15:32:36 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 16:36:24 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 16:54:15 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 16:57:17 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 17:00:14 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 17:03:04 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 17:05:41 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 17:15:45 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 17:16:31 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 17:16:41 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 17:34:31 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 17:41:59 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 18:28:10 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 18:29:59 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 18:42:39 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[24-Apr-2020 19:20:48 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 07:42:47 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 07:51:42 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 07:56:24 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 09:56:23 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 09:56:52 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 10:24:53 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 12:29:55 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 13:25:52 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 13:25:55 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 13:25:57 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 13:35:35 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 14:30:42 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 14:53:17 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 16:40:40 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 16:47:45 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 16:54:25 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 16:54:55 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 16:56:54 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 17:00:25 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 17:14:39 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 17:52:06 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 17:52:42 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 18:07:40 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 18:36:54 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 19:03:50 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 19:16:34 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 19:18:26 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 19:49:24 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 20:17:15 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 20:47:06 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 21:14:12 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 23:05:26 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[26-Apr-2020 23:07:12 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[27-Apr-2020 01:06:01 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[27-Apr-2020 04:07:13 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[27-Apr-2020 04:07:40 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[27-Apr-2020 04:08:24 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[27-Apr-2020 15:43:51 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[27-Apr-2020 16:12:14 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[27-Apr-2020 16:36:47 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682
+[27-Apr-2020 16:37:48 UTC] PHP Fatal error:  Uncaught Error: Wrong parameters for Elasticsearch\Common\Exceptions\ServerErrorResponseException([string $message [, long $code [, Throwable $previous = NULL]]]) in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:682
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(682): Exception->__construct(NULL, 504)
+#1 /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php(298): Elasticsearch\Connections\Connection->process5xxError(Array, Array, Array)
+#2 /home/somersetandwood/public_html/vendor/react/promise/src/FulfilledPromise.php(25): Elasticsearch\Connections\Connection->Elasticsearch\Connections\{closure}(Array)
+#3 /home/somersetandwood/public_html/vendor/guzzlehttp/ringphp/src/Future/CompletedFutureValue.php(55): React\Promise\FulfilledPromise->then(Object(Closure), NULL, NULL)
+#4 /home/somersetandwood/public_h in /home/somersetandwood/public_html/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php on line 682

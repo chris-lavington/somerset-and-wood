@@ -1,0 +1,66 @@
+<div class="social-links">
+	<?php 
+		//echo $block->getData('articleimage');
+		//echo '<br />'.$image_263; 
+		//echo '<br />'.$image_526; 
+		//echo '<br />'.$image_789;
+		//echo '<br />Server name: '.$_SERVER['SERVER_NAME']; 
+		//var_dump($_SERVER); 
+		//echo 'server request scheme: '.$server_request_scheme;
+	?>
+	<h4>Social</h4>
+	<ul>
+		<?php if($block->getData('showfacebook')=='yes') { ?>
+		<?php if($block->getData('facebooktitle')) { ?>
+			<li>
+				<?php if($block->getData('facebooklink')) { ?>
+					<a href="<?php echo $block->getData('facebooklink'); ?>">
+				<?php } ?>
+					<i data-feather="facebook"></i><?php echo $block->getData('facebooktitle'); ?>
+				<?php if($block->getData('facebooklink')) { ?>
+					</a>
+				<?php } ?>	
+			</li>
+		<?php } ?>
+		<?php } ?>
+		<?php if($block->getData('showinstagram')=='yes') { ?>
+			<?php if($block->getData('instagramtitle')) { ?>
+				<li>
+					<?php if($block->getData('instagramlink')) { ?>
+						<a href="<?php echo $block->getData('instagramlink'); ?>">
+					<?php } ?>
+						<i data-feather="instagram"></i><?php echo $block->getData('instagramtitle'); ?>
+					<?php if($block->getData('instagramlink')) { ?>
+						</a>
+					<?php } ?>	
+				</li>
+			<?php } ?>
+		<?php } ?>
+		<?php if($block->getData('showpinterest')=='yes') { ?>
+			<?php if($block->getData('pinteresttitle')) { ?>
+				<li>
+					<?php if($block->getData('pinterestlink')) { ?>
+						<a href="<?php echo $block->getData('pinterestlink'); ?>">
+					<?php } ?>
+						<i data-feather="pinterest"></i><?php echo $block->getData('pinteresttitle'); ?>
+					<?php if($block->getData('pinterestlink')) { ?>
+						</a>
+					<?php } ?>	
+				</li>
+			<?php } ?>
+		<?php } ?>
+		<?php if($block->getData('showtwitter')=='yes') { ?>
+			<?php if($block->getData('twittertitle')) { ?>
+				<li>
+					<?php if($block->getData('twitterlink')) { ?>
+						<a href="<?php echo $block->getData('twitterlink'); ?>">
+					<?php } ?>
+						<i data-feather="twitter"></i><?php echo $block->getData('twittertitle'); ?>
+					<?php if($block->getData('twitterlink')) { ?>
+						</a>
+					<?php } ?>	
+				</li>
+			<?php } ?>
+		<?php } ?>		
+	</ul>
+</div>

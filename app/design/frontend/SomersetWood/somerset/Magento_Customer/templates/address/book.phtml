@@ -1,0 +1,62 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var \Magento\Customer\Block\Address\Book $block */
+?>
+<div class="block block-addresses-default">
+    <div class="block-title"><h3><?= $block->escapeHtml(__('Default Addresses')) ?></h3></div>
+    <div class="block-content address-book-container">
+        <?php if ($_pAddsses = $block->getDefaultBilling()) : ?>
+            <div class="box box-address-billing">
+                <h4 class="box-title">
+                    <span><?= $block->escapeHtml(__('Default Billing Address')) ?></span>
+                </h4>
+                <div class="box-content">
+                    <address>
+                        <?= $block->getAddressHtml($block->getAddressById($_pAddsses)) ?>
+                    </address>
+                </div>
+                <div class="box-actions">
+                    <a class="action edit sw-btn-base sw-btn-secondary sw-fill-secondary" href="<?= $block->escapeUrl($block->getAddressEditUrl($_pAddsses)) ?>">
+                        <span><?= $block->escapeHtml(__('Change Billing Address')) ?></span>
+                    </a>
+                </div>
+            </div>
+        <?php else : ?>
+            <div class="box box-billing-address">
+                <h4 class="box-title"><span><?= $block->escapeHtml(__('Default Billing Address')) ?></span></h4>
+                <div class="box-content">
+                    <p><?= $block->escapeHtml(__('You have no default billing address in your address book.')) ?></p>
+                </div>
+            </div>
+        <?php endif ?>
+
+        <?php if ($_pAddsses = $block->getDefaultShipping()) : ?>
+            <div class="box box-address-shipping">
+                <h4 class="box-title">
+                    <span><?= $block->escapeHtml(__('Default Shipping Address')) ?></span>
+                </h4>
+                <div class="box-content">
+                    <address>
+                        <?= $block->getAddressHtml($block->getAddressById($_pAddsses)) ?>
+                    </address>
+                </div>
+                <div class="box-actions">
+                    <a class="action edit sw-btn-base sw-btn-secondary sw-fill-secondary" href="<?= $block->escapeUrl($block->getAddressEditUrl($_pAddsses)) ?>">
+                        <span><?= $block->escapeHtml(__('Change Shipping Address')) ?></span>
+                    </a>
+                </div>
+            </div>
+        <?php else : ?>
+            <div class="box box-shipping-address">
+                <h4 class="box-title"><span><?= $block->escapeHtml(__('Default Shipping Address')) ?></span></h4>
+                <div class="box-content">
+                    <p><?= $block->escapeHtml(__('You have no default shipping address in your address book.')) ?></p>
+                </div>
+            </div>
+        <?php endif ?>
+    </div>
+</div>

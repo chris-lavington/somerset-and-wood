@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright © MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Directory\Helper\Data" type="MageWorx\StoreSwitcher\Helper\Directory" />
+    <type name="Magento\Framework\App\FrontControllerInterface">
+        <plugin name="mageworx_store_switcher"
+                type="MageWorx\StoreSwitcher\Plugin\Switcher"
+        />
+    </type>
+</config>

@@ -1,0 +1,65 @@
+<?php 
+  $baseUrl = $block->getUrl(); 
+  $fullUrl = $block->getUrl('*/*/*', ['_current' => true, '_use_rewrite' => true]); 
+  $urlSplit = parse_url($fullUrl);
+  $path = $urlSplit['path'];
+?>
+<div class="nav-wrapper">
+ <nav class="navigation" >
+    <ul id="menu" class="menu">
+        <li class="menu-item-top collections-top"><span>Collections <i class="feather icon-chevron-down"></i></span>
+            <ul class="sub-menu collections-sub">
+                <li><a href="/latest-collections">Latest Collections</a></li>
+                <li><a href="/collections/themed-collections">Themed Collections</a></li>
+                <li><a href="/collections/artist-collections">Artist Collections</a></li>
+                <li><a href="/collections/album-works">Album Works</a></li>
+                <li><a href="/collections/asian-art">Asian Art</a></li>
+                <li><a href="/sold">Sold Archive</a></li>
+            </ul>
+        </li>
+        <li class="menu-item-top artwork-top"><span>Artwork <i class="feather icon-chevron-down"></i></span>
+            <ul class="sub-menu artwork-sub">
+                <li><a href="/age">By Age</a></li>
+                <li><a href="/medium">By Medium</a></li>
+                <li><a href="/subject">By Subject</a></li>
+                <li><a href="/artists">Artist A–Z</a></li>
+            </ul>
+        </li>
+        <li class="menu-item-top new-top"><a href="/new"><span>New</span></a></li>
+        <li class="menu-item-top view-all-top"><a href="/view-all"><span>View All</span></a></li>
+        <li class="menu-item-top about-top"><span>About <i class="feather icon-chevron-down"></i></span>
+            <ul class="sub-menu about-sub">
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/what-we-offer">What We Offer</a></li>
+                <li><a href="/testimonials">Testimonials</a></li>
+                <li><a href="/news-and-articles">Articles | News</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+</div>
+<script>
+    require([
+        'jquery',
+        'jquery-ui-modules/menu',
+        'slicknav'
+    ], 
+        function ($) {
+            $('#menu').slicknav({
+                prependTo:      '.middle-header',
+                label:          '',
+                removeClasses:  'true',
+                duplicate:      'true',
+                removeStyles:   'false',
+                closedSymbol:   '<i class="feather icon-chevron-down"></i>',
+                openedSymbol:   '<i class="feather icon-chevron-up"></i>',
+                nestedParentLinks: 'true',
+            });
+            // $('li.sub-top').hover(function(){
+            //     $(this).children('ul').stop().slideToggle(400);
+            // });
+             $( ".menu" ).menu({
+                position: { my: "left top", at: "left top+25" }
+             });
+        });
+</script>

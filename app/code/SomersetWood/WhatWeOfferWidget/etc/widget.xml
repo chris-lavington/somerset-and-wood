@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+	<widget class="SomersetWood\WhatWeOfferWidget\Block\WhatWeOffer" id="somersetwood_whatweofferwidget_whatweofferwidget">
+		<label>SW What We Offer Widget</label>
+		<description></description>
+	</widget>
+</widgets>

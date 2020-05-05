@@ -1,0 +1,144 @@
+<?php
+/**
+ * Copyright © 2017 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/**
+ * Product media data template
+ *
+ * @var $block \Magento\Catalog\Block\Product\View\Gallery
+ */
+?>
+<?php 
+$_product = $block->getProduct();
+$productNameStripped = $block->stripTags($_product->getName(), null, true); 
+?>
+<?php if (!$_product->isSaleable()): ?><div class="product-detail-image-container"><?php endif; ?>
+
+<?php 
+$json = $block->getSomersetGalleryImagesJson();
+$jsonDecode = json_decode($json, true);
+$arraySize = sizeof($jsonDecode);
+// order base image first
+usort($jsonDecode, function($a, $b) {
+    if($a['isMain']==$b['isMain']) return 0;
+    return $a['isMain'] < $b['isMain']?1:-1;
+});
+
+$_imageHelper = $this->helper(Magento\Catalog\Helper\Image::class);
+$placeholderImageBase = $block->getViewFileUrl('Magento_Catalog::images/placeholder/somersetandwood-placeholder-base.png');
+$placeholderImageSmall = $block->getViewFileUrl('Magento_Catalog::images/placeholder/somersetandwood-placeholder-small.png');
+
+//echo $placeholderImageUrl;
+// $imageResizer = $block->getImageResizer();
+//$resizedPlaceholder904 = $imageResizer->resizeAndGetUrl($placeholderImageUrl, '904', '904');
+// $resizedPlaceholder452 = $imageResizer->resizeAndGetUrl($placeholderImageUrl, '452', '452');
+
+//echo print_r($jsonDecode);
+
+?>
+
+<div class="somerset_gallery">
+	<?php 
+		if($arraySize > 1) {
+			echo '<ul id="lightSlider">';
+		} 
+		foreach ($jsonDecode as $productImgs ) {
+			//$resizedThumb = $imageResizer->resizeAndGetUrl($productImgs['thumb'], '306', '306');
+			$resizedThumb ='';
+		?>
+			
+				<?php if($arraySize > 1) { ?>
+					<li data-thumb="<?php echo $productImgs['thumb']; ?>">
+						<a href="<?php echo $productImgs['full']; ?>">
+							<img class="img-responsive" width="480" src="<?php echo $productImgs['somerset_480']; ?>" srcset="<?php echo $productImgs['somerset_480_2x']; ?> 2x, <?php echo $productImgs['somerset_480_3x']; ?> 3x" alt="<?php echo $productImgs['caption']; ?>" data-dots="1">
+						</a>
+					</li>
+				<?php } else { ?>
+				
+					<?php if(empty($productImgs['somerset_726'])) { ?>
+						<img class="img-responsive" src="<?php echo $placeholderImageSmall; ?>" srcset="<?php echo $placeholderImageBase; ?> 2x" alt="Somerset and Wood image placeholder" />
+					<?php } else { ?>
+						<a class="single-image-magnific" href="<?php echo $productImgs['full']; ?>">
+							<img class="img-responsive" width="480" src="<?php echo $productImgs['somerset_480']; ?>" srcset="<?php echo $productImgs['somerset_480_2x']; ?> 2x, <?php echo $productImgs['somerset_480_3x']; ?> 3x" alt="<?php echo $productImgs['caption']; ?>" data-dots="1">
+						</a>
+					<?php } ?>
+				<?php } ?>	
+		<?php } ?>
+	<?php if($arraySize > 1) { echo '</ul>'; } ?>	
+</div>
+
+<?php if (!$_product->isSaleable()): ?></div><?php endif; ?>
+
+<?php if($arraySize ==1) { ?>
+	<script>
+	require([
+	    'jquery',
+	    'lightslider',
+	    'magnific-popup'
+	], 
+	function ($) {
+	    $(function () { // to ensure that code evaluates on page load
+	    	$('.single-image-magnific').lightSlider({
+			    gallery: false,
+			    item: 1,
+			    loop:false,
+			    slideMargin: 0,
+			    // thumbItem: 9,
+			    adaptiveHeight: true,
+			    // autoWidth: true,
+			    vThumbWidth:306,
+			    enableTouch: false,
+			    enableDrag: false,
+			    prevHtml: '<i class="feather icon-chevron-left"></i>',
+          		nextHtml: '<i class="feather icon-chevron-right"></i>', 
+			    onSliderLoad: function() {
+			        $('.single-image-magnific').magnificPopup({
+			          type: 'image'
+			        });    
+	    		}	
+			});		
+	    });
+	});
+	</script>
+<?php } elseif($arraySize >1) { ?>
+	<script>
+	require([
+	    'jquery',
+	    'lightslider',
+	    'magnific-popup'
+	], 
+	function ($) {
+	    $(function () { // to ensure that code evaluates on page load
+	    	$('#lightSlider').lightSlider({
+			    gallery: true,
+			    item: 1,
+			    loop:true,
+			    slideMargin: 0,
+			    // thumbItem: 9,
+			    adaptiveHeight: true,
+			    // autoWidth: true,
+			    vThumbWidth:90,
+			    enableTouch: true,
+			    enableDrag: true,
+			    prevHtml: '<i class="feather icon-chevron-left"></i>',
+          		nextHtml: '<i class="feather icon-chevron-right"></i>',
+			    onSliderLoad: function() {
+			        $('#lightSlider').magnificPopup({
+			          delegate: 'a',
+			          type: 'image',
+			          gallery: {
+				        enabled:true,
+				        navigateByImgClick: true,
+				        tCounter: '' // markup of counter
+				      }
+			        });    
+	    		}	
+			});		
+	    });
+	});
+	</script>
+<?php } ?>

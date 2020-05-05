@@ -1,0 +1,128 @@
+// variables
+@base-color: #b7beb4;
+//@banner-color: #878C85;
+//@banner-color: #7B8079;
+@banner-color: #849686;
+@border-color: #eeeeee;
+@text-color: #373d3f; 
+@secondary-text-color: #7a7e78;
+@footer-color: fade(@base-color,25%);
+
+@link-color: @base-color;
+@button-background-color: #979797;
+@button-background-hover-color: #646464;
+
+@margin-lg: 2.858em; // 40px
+@margin-md: 1.429em; // 20px
+@margin-sm: 0.7145em; // 10px
+
+// buttons
+.sw-btn-font-style {
+    font-weight: 400 !important;
+    text-transform: uppercase !important;
+    font-size: 11px !important;
+    letter-spacing: 1.5px !important;
+    line-height: 21px !important;
+    outline: none !important;
+    text-decoration: none !important;
+    font-family: 'FrutigerLTStd-Light',sans-serif !important;
+}
+
+.sw-btn-base {
+
+    // Text Styles
+    .sw-btn-font-style;
+
+    // Shape and Size
+    position: relative !important;
+    text-align: center !important;
+    display: inline-block;
+    padding: 0;
+    border-radius: 3px !important;
+    border: none !important;
+
+    // Default Color Set
+    background: @button-background-color !important;
+ 
+    // Sizing
+    &.sw-fill-out {
+        height: auto !important;
+        padding: 0.5em 1em !important;
+    }
+
+    &.sw-fill-long {
+        padding: 0.5em 2em !important;
+    }
+
+    &.sw-fill-long-fixed {
+        max-width: 100% !important;
+        min-width: 300px !important;
+        padding: 0.5em 1em !important;
+    }
+    &.sw-fill-secondary {
+        height: auto !important;
+        padding: 0.3em 0.5em !important;
+    }
+    &.sw-place-order {
+        height: auto !important;
+        padding: 1em 3em !important;
+    }
+}
+
+.sw-btn-solid(@background, @color) {
+    background: @background !important;
+    color: @color !important;
+
+    &:hover,
+    &:focus,
+    {
+        background: @button-background-hover-color !important;
+        color: @color !important;
+    }
+
+    &:active {
+        background: @button-background-hover-color !important;
+        color: @color !important;
+    }
+}
+
+// Button Colors
+.sw-btn-primary { 
+	.sw-btn-solid(@button-background-color, white);
+}
+.sw-btn-secondary { 
+	.sw-btn-solid(lighten(@button-background-color, 10%), white); 
+}
+
+.sw-btn-primary a, .sw-btn-secondary a {
+	color: white !important;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.sw-btn-primary a:hover {
+	background-color: @button-background-hover-color;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.sw-btn-secondary a:hover {
+	background-color: lighten(@button-background-hover-color, 10%);
+    text-decoration: none;
+    font-weight: normal;
+}
+
+a.sw-btn-secondary, a.sw-btn-primary {
+    color: white !important;
+}
+
+//
+//  Desktop (style-l.css)
+//  _____________________________________________
+
+// min-width: 768px
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .sw-btn-base.sw-fill-secondary {
+        padding: 0.3em 0.8em !important;
+    }
+}

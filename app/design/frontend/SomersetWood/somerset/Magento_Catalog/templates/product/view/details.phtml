@@ -1,0 +1,27 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php if ($detailedInfoGroup = $block->getGroupChildNames('detailed_info', 'getChildHtml')):?>
+        <?php $layout = $block->getLayout(); ?>
+            <?php foreach ($detailedInfoGroup as $name):?>
+                <?php
+                    $html = $layout->renderElement($name);
+                    if (!trim($html)) {
+                        continue;
+                    }
+                    $alias = $layout->getElementAlias($name);
+                    $label = $block->getChildData($alias, 'title');
+                ?>
+                <?php if ($alias !='additional') { ?>
+                <div class="description-container" id="<?= /* @escapeNotVerified */ $alias ?>">
+                    <?= /* @escapeNotVerified */ $html ?>
+                </div>
+                <?php } ?>
+            <?php endforeach;?>
+<?php endif; ?>

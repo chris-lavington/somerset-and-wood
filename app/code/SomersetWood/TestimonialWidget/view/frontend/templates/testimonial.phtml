@@ -1,0 +1,29 @@
+<?php 
+	// check if URL is HTTP or HTTPS
+	if ( (! empty($_SERVER['REQUEST_SCHEME']) && $_SERVER['REQUEST_SCHEME'] == 'https') ||
+		     (! empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ||
+		     (! empty($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == '443') ) {
+		    $server_request_scheme = 'https';
+		} else {
+		    $server_request_scheme = 'http';
+		}
+
+	// form image URL
+	$imageUrl = $server_request_scheme.'://'.$_SERVER['SERVER_NAME'].'/pub/media/wysiwyg/about/'.$block->getData('testimonialImage') ;
+?>
+<div class="testimonial-panel">
+	<a href="/<?php if($block->getData('testimonialLink')) {echo $block->getData('testimonialLink');} ?>">
+		<?php if($block->getData('testimonialImage')) { ?>
+			<img src="<?= $imageUrl; ?>" />
+		<?php } ?>
+		<?php if($block->getData('testimonialTitle')) { ?>
+			<h3><?php echo $block->getData('testimonialTitle'); ?></h3>
+		<?php } ?>
+		<?php if($block->getData('testimonialText')) { ?>
+			<p><?php echo $block->getData('testimonialText'); ?></p>
+		<?php } ?>
+		<?php if($block->getData('testimonialLink')) { ?>
+			<p><a class="read-more" href="/<?php if($block->getData('testimonialLink')) {echo $block->getData('testimonialLink');} ?>">Read More</a></p>
+		<?php } ?>
+	</a>
+</div>

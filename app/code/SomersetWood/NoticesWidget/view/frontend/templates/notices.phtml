@@ -1,0 +1,42 @@
+<?php 
+	// check if URL is HTTP or HTTPS
+	if ( (! empty($_SERVER['REQUEST_SCHEME']) && $_SERVER['REQUEST_SCHEME'] == 'https') ||
+		     (! empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ||
+		     (! empty($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == '443') ) {
+		    $server_request_scheme = 'https';
+		} else {
+		    $server_request_scheme = 'http';
+		}
+	
+	// form image URL
+	$imageUrl = $server_request_scheme.'://'.$_SERVER['SERVER_NAME'].'/pub/media/wysiwyg/about/'.$block->getData('aboutImage') ;
+
+?>
+<div>
+	<a href="/<?php if($block->getData('aboutLink')) {echo $block->getData('aboutLink');} ?>">
+		<?php if($block->getData('aboutImage')) { ?>
+		<img src="<?= $imageUrl; ?>" />
+		<?php 
+			//echo $block->getData('aboutImage');
+			//echo '<br />'.$image_263; 
+			//echo '<br />'.$image_526; 
+			//echo '<br />'.$image_789;
+			//echo '<br />Server name: '.$_SERVER['SERVER_NAME']; 
+			//var_dump($_SERVER); 
+
+			
+			//echo 'server request scheme: '.$server_request_scheme;
+
+		?>
+		<?php } ?>
+		<?php if($block->getData('aboutTitle')) { ?>
+			<h3><?php echo $block->getData('aboutTitle'); ?></h3>
+		<?php } ?>
+		<?php if($block->getData('aboutText')) { ?>
+			<p><?php echo $block->getData('aboutText'); ?></p>
+		<?php } ?>
+		<?php if($block->getData('aboutLink')) { ?>
+			<p><a class="read-more" href="/<?php if($block->getData('aboutLink')) {echo $block->getData('aboutLink');} ?>">Read More</a></p>
+		<?php } ?>
+	</a>
+</div>

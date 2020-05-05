@@ -1,0 +1,32 @@
+<?php 
+    $categories = $block->getCategories(57);
+    $_imageHelper = $this->helper(Magento\Catalog\Helper\Image::class);
+    $placeholder_image = '/media/logo/default/somersetandwood-placeholder-compressed.png';
+?>
+<div class="category-image-container">
+    <?php
+    foreach($categories as $category) {
+        $title = $category->getName();
+        $id = $category->getId();
+        $url = $category->getUrl();
+
+        $categoryParticulars = $block->getCategory($id);
+        $productImageURL = $categoryParticulars->getImageUrl();
+
+    ?>
+        <div class="category-image-item">
+            <div class="cat-image">
+                <a href="<?php echo $url; ?>">
+                <?php if ($productImageURL!='') { ?>
+                    <img data-src="<?= $productImageURL; ?>" class="lazyload" loading="lazy" />
+                <?php } ?>
+                </a>
+            </div>
+            <div class="info">
+                <h4><a href="<?php echo $url; ?>">
+                    <?php echo $title; ?></a>
+                </h4>
+            </div>                    
+        </div>
+    <?php } ?>
+</div>

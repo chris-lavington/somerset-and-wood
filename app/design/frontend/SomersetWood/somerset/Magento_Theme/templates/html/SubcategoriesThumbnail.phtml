@@ -1,0 +1,81 @@
+<?php
+ 
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$category = $objectManager->get('Magento\Framework\Registry')->registry('current_category'); //Get Current Category
+$subcats = $category->getChildrenCategories();
+//$_helper = $this->helper('Magento\Catalog\Helper\Output');
+//$imageResizer = $block->getImageResizer();
+//$_imageHelper = $this->helper('Magento\Catalog\Helper\Image');
+$_imageHelper = $this->helper(Magento\Catalog\Helper\Image::class);
+$placeholder_image = '/media/logo/default/somersetandwood-placeholder-compressed.png';
+
+?>
+<?php if($category->getName() === "Themed Collections"  || $category->getName() === "Artist Collections") { ?>
+<nav id="themed-links" class="navbar sticky-top navbar-light">
+    <?php if($category->getName() === "Artist Collections") { ?>
+        <?php
+           foreach(range('A','Z') as $letterhead) { 
+              echo '<div><a href="#'.strtolower($letterhead).'">'.$letterhead.'</a></div>';
+            } 
+        ?>
+    <?php } elseif($category->getName() === "Themed Collections") { ?>
+        <?php foreach ($subcats as $subcat) { 
+            $_category_nav = $objectManager->create('Magento\Catalog\Model\Category')->load($subcat->getId());
+            $themed_collection_nav_anchor = $_category_nav->getMetaKeywords();
+            if($themed_collection_nav_anchor !='') { echo '<div><a href="#'.$themed_collection_nav_anchor.'">'.ucwords($themed_collection_nav_anchor).'</a></div>';}
+        ?>
+        <?php } ?>
+    <?php } ?>
+</nav>
+<div data-spy="scroll" data-target="#themed-links" data-offset="0">
+<?php } ?>
+    <div class="category-image-container">
+                <?php
+    //echo 'current cat: '.$category->getName();
+                $i=0;
+                foreach ($subcats as $subcat) {
+                $_category = $objectManager->create('Magento\Catalog\Model\Category')->load($subcat->getId());
+                //$_outputhelper = $this->helper('Magento\Catalog\Helper\Output');
+                $subcaturl = $subcat->getUrl();
+                $imageUrl = $_category->getImageUrl();
+                //$imageName = explode('/', $imageUrl);
+
+                // Get the meta_* values using a magic getter
+                $themed_collection_anchor = $_category->getMetaKeywords();
+                $themed_collection_group = $_category->getMetaDescription();
+
+                if ($imageUrl!='') {
+                   // $image_358 = $imageResizer->resizeAndGetUrl($imageUrl, '358', '358');
+                   // $image_716 = $imageResizer->resizeAndGetUrl($imageUrl, '716', '716');
+                   // $image_1074 = $imageResizer->resizeAndGetUrl($imageUrl, '1074', '1074');
+                }
+              ?>
+                    <div id="<?php echo $themed_collection_anchor; ?>" class="category-image-item <?php if($category->getName() === "Themed Collections" || $category->getName() === "Artist Collections") { 
+                            echo 'category-offset';
+                            if($themed_collection_group !='') {
+                                echo ' category-group-'.$themed_collection_group;
+                            }
+                        } ?>">
+                        <div class="cat-image">
+                            <a href="<?php echo $subcaturl ?>">
+                                <!-- <img src="<?= $imageUrl ?>" alt=""> -->
+                                <?php if ($imageUrl!='') { ?>
+                                <img class="lazyload" loading="lazy" data-src="<?php echo $imageUrl; ?>" />
+                            <?php } ?>
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h4><a href="<?php echo $subcaturl ?>">
+                                <?php echo $subcat->getName(); ?></a>
+                            </h4>
+                        </div>                    
+                    </div>
+                <?php 
+                ++$i;
+                }
+
+                ?>
+    </div>
+<?php if($category->getName() === "Themed Collections") { ?>
+</div>
+<?php } ?>

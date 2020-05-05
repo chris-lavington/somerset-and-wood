@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+	<widget class="SomersetWood\SocialLinksWidget\Block\SocialLinks" id="somersetwood_sociallinkswidget_sociallinkswidget">
+		<label>SW Social Links Widget</label>
+		<description></description>
+		<parameters>
+			<parameter name="instagramtitle" sort_order="1" visible="true" xsi:type="text">
+				<label>Instagram Title</label>
+			</parameter>
+	        <parameter name="instagramlink" sort_order="2" visible="true" xsi:type="text">
+				<label>Instagram Link</label>
+			</parameter>
+	        <parameter name="showinstagram" xsi:type="select" source_model="SomersetWood\SocialLinksWidget\Model\Config\Source\Show" required="false" visible="true" sort_order="3">
+	            <label translate="true">Show Instagram?</label>
+	        </parameter>
+	        <parameter name="pinteresttitle" sort_order="4" visible="true" xsi:type="text">
+				<label>Pinterest Title</label>
+			</parameter>
+	        <parameter name="pinterestlink" sort_order="5" visible="true" xsi:type="text">
+				<label>Pinterest Link</label>
+			</parameter>
+	        <parameter name="showpinterest" xsi:type="select" source_model="SomersetWood\SocialLinksWidget\Model\Config\Source\Show" required="false" visible="true" sort_order="6">
+	            <label translate="true">Show Pinterest?</label>
+	        </parameter>
+	        <parameter name="facebooktitle" sort_order="7" visible="true" xsi:type="text">
+				<label>Facebook Title</label>
+			</parameter>
+	        <parameter name="facebooklink" sort_order="8" visible="true" xsi:type="text">
+				<label>Facebook Link</label>
+			</parameter>
+	        <parameter name="showfacebook" xsi:type="select" source_model="SomersetWood\SocialLinksWidget\Model\Config\Source\Show" required="false" visible="true" sort_order="9">
+	            <label translate="true">Show Facebook?</label>
+	        </parameter> 
+	        <parameter name="twittertitle" sort_order="10" visible="true" xsi:type="text">
+				<label>Twitter Title</label>
+			</parameter>
+	        <parameter name="twitterlink" sort_order="11" visible="true" xsi:type="text">
+				<label>Twitter Link</label>
+			</parameter>
+	        <parameter name="showtwitter" xsi:type="select" source_model="SomersetWood\SocialLinksWidget\Model\Config\Source\Show" required="false" visible="true" sort_order="12">
+	            <label translate="true">Show Twitter?</label>
+	        </parameter>  
+		</parameters>
+	</widget>
+</widgets>

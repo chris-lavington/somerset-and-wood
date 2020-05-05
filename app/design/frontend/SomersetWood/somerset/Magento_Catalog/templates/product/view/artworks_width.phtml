@@ -1,0 +1,38 @@
+<?php
+$_helper = $this->helper('Magento\Catalog\Helper\Output');
+$_product = $block->getProduct();
+$_call = $block->getAtCall();
+$_code = $block->getAtCode();
+$_className = $block->getCssClass();
+$_attributeType = $block->getAtType();
+$_attributeLabel = $block->getAtLabel();
+$_attributeAddAttribute = $block->getAddAttribute();
+$_attributeValue =$_product->getResource()->getAttribute($_code)->getFrontend()->getValue($_product);
+
+$renderLabel = true;
+// if defined as 'none' in layout, do not render
+if ($_attributeLabel == 'none') {
+    $renderLabel = false;
+}
+
+if ($_attributeLabel && $_attributeLabel == 'default') {
+    $_attributeLabel = $_product->getResource()->getAttribute($_code)->getStoreLabel();
+}
+?>
+
+
+<?php if ($_attributeValue): ?>
+<span class="sw_attribute <?= /* @escapeNotVerified */ $_className ?>">
+    <?php if ($renderLabel): ?><strong class="type"><?= /* @escapeNotVerified */ $_attributeLabel ?>:</strong><?php endif; ?>
+    <?php	
+		if($_className == 'artworks_width') {
+		$cm = $_attributeValue;
+		$inches = round($cm/2.54,1);
+	?>
+	   <span class="value" <?= /* @escapeNotVerified */ $_attributeAddAttribute ?>><?php echo $cm ?>cm (<?php echo $inches ?>&#8243;)</span>
+	<?php
+		}
+	?>
+
+</span>
+<?php endif; ?>

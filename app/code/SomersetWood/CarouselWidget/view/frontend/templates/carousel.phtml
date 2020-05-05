@@ -1,0 +1,77 @@
+<?php 
+  // check if URL is HTTP or HTTPS
+  if ( (! empty($_SERVER['REQUEST_SCHEME']) && $_SERVER['REQUEST_SCHEME'] == 'https') ||
+         (! empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ||
+         (! empty($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == '443') ) {
+        $server_request_scheme = 'https';
+    } else {
+        $server_request_scheme = 'http';
+    }
+  // enable Staempfli_ImageResizer
+  //$imageResizer = $block->getImageResizer();
+
+ // $_helper = $this->helper(Magento\Catalog\Helper\Output::class);
+ // $_imageHelper = $this->helper(Magento\Catalog\Helper\Image::class);
+
+  // form image URL
+  $imageUrl1 = $server_request_scheme.'://'.$_SERVER['SERVER_NAME'].'/pub/media/wysiwyg/banner/'.$block->getData('carouselimage1');
+  $imageUrl2 = $server_request_scheme.'://'.$_SERVER['SERVER_NAME'].'/pub/media/wysiwyg/banner/'.$block->getData('carouselimage2');
+  $imageUrl3 = $server_request_scheme.'://'.$_SERVER['SERVER_NAME'].'/pub/media/wysiwyg/banner/'.$block->getData('carouselimage3');
+//echo 'imageUrl: '.$imageUrl;
+  // if ($imageUrl1!='') { $image1_1152 = $imageResizer->resizeAndGetUrl($imageUrl1, '1152', '1152'); }
+  // if ($imageUrl2!='') { $image2_1152 = $imageResizer->resizeAndGetUrl($imageUrl2, '1152', '1152'); }
+  // if ($imageUrl3!='') { $image3_1152 = $imageResizer->resizeAndGetUrl($imageUrl3, '1152', '1152'); }
+
+
+
+  $link1 = $block->getData('link1');
+  $link2 = $block->getData('link2');
+  $link3 = $block->getData('link3');   
+?>
+<div class="homepage-lightslider-container">
+  <ul id="lightSlider">
+    <a href="<?php echo $link1 ?>"><li><img class="img-responsive" width="1152" src="<?php echo $imageUrl1; ?>" alt=""></li></a>
+    <a href="<?php echo $link2 ?>"><li><img class="img-responsive" width="1152" src="<?php echo $imageUrl2; ?>" alt=""></li></a>
+    <a href="<?php echo $link3 ?>"><li><img class="img-responsive" width="1152" src="<?php echo $imageUrl3; ?>" alt=""></li></a>
+  </ul>
+</div>
+<script>
+  require([
+      'jquery',
+      'lightslider'
+  ], 
+  function ($) {
+      $(function () { // to ensure that code evaluates on page load
+        $('#lightSlider').lightSlider({
+          onSliderLoad: function (el) {
+            var maxHeight = 0,
+              container = $(el),
+              children = container.children();
+            children.each(function () {
+              var childHeight = $(this).height();
+              if (childHeight > maxHeight) {
+                maxHeight = childHeight;
+              }
+            });
+            container.height(maxHeight);
+          },
+          gallery: false,
+          pager: false,
+          speed: 800, //ms'
+          auto: true,
+          pause: 7000,
+          pauseOnHover: true,
+          item: 1,
+          loop:true,
+          slideMargin: 0,
+          //adaptiveHeight: true,
+          //autoWidth: true,
+         // vThumbWidth:90,
+          enableTouch: true,
+          enableDrag: true,
+          prevHtml: '<i class="feather icon-chevron-left"></i>',
+          nextHtml: '<i class="feather icon-chevron-right"></i>' 
+      });   
+      });
+  });
+</script>

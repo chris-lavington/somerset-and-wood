@@ -1,0 +1,75 @@
+<?php 
+
+  // check if URL is HTTP or HTTPS
+  if ( (! empty($_SERVER['REQUEST_SCHEME']) && $_SERVER['REQUEST_SCHEME'] == 'https') ||
+         (! empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ||
+         (! empty($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == '443') ) {
+        $server_request_scheme = 'https';
+    } else {
+        $server_request_scheme = 'http';
+    }
+
+?>
+<div class="exhibition-lightslider-container">
+  <ul id="exhibitionLightSlider">
+  <?php
+    $imageCount = $block->getData('imageCount');
+    $totalCount = $block->getData('totalCount');
+    for($i = 1; $i <= $totalCount; ++$i) {
+      $imageUrl[$i] = $server_request_scheme.'://'.$_SERVER['SERVER_NAME'].'/pub/media/wysiwyg/exhibition-slideshow/'.$block->getData('exhibitionSlideshowImage'.$i);
+      $link[$i] = $block->getData('link'.$i);
+      $title[$i] = $block->getData('title'.$i);
+      $text[$i] = $block->getData('text'.$i);
+
+      if($block->getData('exhibitionSlideshowImage'.$i)!='') {
+        echo '<li data-thumb="'.$imageUrl[$i].'">';
+          if($block->getData('link'.$i)!='') {
+            echo '<a href="'.$link[$i].'">';
+          }
+          echo '<img class="img-responsive" width="1152" src="'.$imageUrl[$i].'" alt="" data-dots="1">';
+          if($block->getData('link'.$i)!='') {
+            echo '</a>';
+          }
+          if($title[$i]!='') {
+            echo '<h5>'.$title[$i].'</h5>';
+          }
+          if($text[$i]!='') {
+            echo '<p>'.$text[$i].'</p>';
+          }
+        echo '</li>';
+      }
+    }
+  ?>
+  </ul>
+</div>
+ <div class="purchase-artwork"><h2><a href="/exhibition-artwork">PURCHASE ARTWORK FROM EXHIBITION <i class="feather icon-chevron-down"></i></a></h2></div>
+<script>
+  var thumbNum = "<?php echo $imageCount ?>";
+    console.log(thumbNum); 
+  require([
+      'jquery',
+      'lightslider'
+  ],
+  function ($) {
+      $(function () { // to ensure that code evaluates on page load
+        $('#exhibitionLightSlider').lightSlider({
+          gallery: true,
+          item: 1,
+          thumbItem: thumbNum,
+          loop:true,
+          slideMargin: 0,
+          speed: 800, //ms'
+          auto: true,
+          pause: 10000,
+          pauseOnHover: true,
+          adaptiveHeight: true,
+          enableTouch: true,
+          enableDrag: true,
+          // prevHtml: '<i class="feather icon-chevron-left"></i>',
+          // nextHtml: '<i class="feather icon-chevron-right"></i>', 
+          prevHtml: '<span class="previous"><i class="feather icon-chevron-left"></i> PREVIOUS</span>',
+          nextHtml: '<span class="next">NEXT <i class="feather icon-chevron-right"></i></span>', 
+      });   
+      });
+  });
+</script>

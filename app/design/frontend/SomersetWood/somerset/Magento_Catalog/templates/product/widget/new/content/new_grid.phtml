@@ -1,0 +1,175 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+/**
+ * Template for displaying new products widget
+ *
+ * @var $block \Magento\Catalog\Block\Product\Widget\NewWidget
+ */
+if ($exist = ($block->getProductCollection() && $block->getProductCollection()->getSize())) {
+
+    //$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+    //$StockState = $objectManager->get('\Magento\CatalogInventory\Api\StockStateInterface');
+    $_helper = $this->helper(Magento\Catalog\Helper\Output::class);
+    $_imageHelper = $this->helper(Magento\Catalog\Helper\Image::class);
+    $placeholder_image = '/media/logo/default/somersetandwood-placeholder-compressed.png';
+    $image = 'category_page_grid';
+    $image_x2 = 'category_page_grid_x2';
+    $image_x3 = 'category_page_grid_x3';
+    
+    $type = 'widget-new-grid';
+    $items = $block->getProductCollection()->addAttributeToSort('price', 'desc')->getItems();
+
+    // set variables scope
+    $orientation = '';
+    $landscapeImage = '';
+    $landscapeImage_x2 ='';
+    $landscapeImage_x3 ='';
+    $newHeight ='';
+    $newHeight_x2 ='';
+    $newHeight_x3 ='';
+    $resizedPortraitImageUrl ='';
+    $resizedPortraitImageUrl_x2 ='';
+    $resizedPortraitImageUrl_x3 ='';
+}
+?>
+
+<?php if ($exist):?>
+    <div class="new-artwork-container">
+        <div class="new-artwork-toolbar top">
+            <?= $block->getPagerHtml() ?>
+        </div>
+        <ol class="new-items">
+            <?php $iterator = 1; ?>
+            <?php foreach ($items as $_item): ?>
+            <?php 
+
+                $productImageURL = $_imageHelper->init($_item, $image)
+                                        ->constrainOnly(TRUE)
+                                        ->keepAspectRatio(TRUE)
+                                        ->keepTransparency(TRUE)
+                                        ->keepFrame(FALSE)
+                                        ->getUrl();
+                $productImagePath  = $_SERVER['DOCUMENT_ROOT'].'/pub'.str_replace("https://somersetandwood.com", "", $productImageURL);
+                $productImageDimensions = getimagesize($productImagePath);
+                // $productImageDimensions = getimagesize($productImageURL);
+                $productImageWidth = $productImageDimensions[0];
+                $productImageHeight = $productImageDimensions[1];
+
+                $productImageURL_x2 = $_imageHelper->init($_item, $image_x2)
+                                        ->constrainOnly(TRUE)
+                                        ->keepAspectRatio(TRUE)
+                                        ->keepTransparency(TRUE)
+                                        ->keepFrame(FALSE)
+                                        ->getUrl();
+                $productImagePath_x2  = $_SERVER['DOCUMENT_ROOT'].'/pub'.str_replace("https://somersetandwood.com", "", $productImageURL_x2);
+                $productImageDimensions_x2 = getimagesize($productImagePath_x2);
+                // $productImageDimensions_x2 = getimagesize($productImageURL_x2);
+                $productImageWidth_x2 = $productImageDimensions_x2[0];
+                $productImageHeight_x2 = $productImageDimensions_x2[1];
+                
+                $productImageURL_x3 = $_imageHelper->init($_item, $image_x3)
+                                        ->constrainOnly(TRUE)
+                                        ->keepAspectRatio(TRUE)
+                                        ->keepTransparency(TRUE)
+                                        ->keepFrame(FALSE)
+                                        ->getUrl();
+                $productImagePath_x3  = $_SERVER['DOCUMENT_ROOT'].'/pub'.str_replace("https://somersetandwood.com", "", $productImageURL_x3);
+                $productImageDimensions_x3 = getimagesize($productImagePath_x3);
+                // $productImageDimensions_x3 = getimagesize($productImageURL_x3);
+                $productImageWidth_x3 = $productImageDimensions_x3[0];
+                $productImageHeight_x3 = $productImageDimensions_x3[1];
+
+
+                if($productImageWidth > $productImageHeight) {
+                    $orientation = 'landscape';
+                    $landscapeImage = $productImageURL;
+                    $landscapeImage_x2 = $productImageURL_x2;
+                    $landscapeImage_x3 = $productImageURL_x3;
+
+                } elseif ($productImageWidth < $productImageHeight) {
+                    $orientation = 'portrait';
+                    $difference = 249 - $productImageWidth;
+                    $difference_x2 = 498 - $productImageWidth_x2;
+                    $difference_x3 = 747 - $productImageWidth_x3;
+
+                    $newHeight = $productImageHeight + $difference;
+                    $newHeight_x2 = $productImageHeight_x2 + $difference_x2;
+                    $newHeight_x3 = $productImageHeight_x3 + $difference_x3;
+
+                    $resizedPortraitImageUrl = $_imageHelper->init($_item, $image_x3)
+                                        ->constrainOnly(TRUE)
+                                        ->keepAspectRatio(TRUE)
+                                        ->keepTransparency(TRUE)
+                                        ->keepFrame(FALSE)
+                                        ->resize(249, ($newHeight+10))
+                                        ->getUrl();
+                    $resizedPortraitImageUrl_x2 = $_imageHelper->init($_item, $image_x3)
+                                        ->constrainOnly(TRUE)
+                                        ->keepAspectRatio(TRUE)
+                                        ->keepTransparency(TRUE)
+                                        ->keepFrame(FALSE)
+                                        ->resize(498, ($newHeight_x2+10))
+                                        ->getUrl();
+                    $resizedPortraitImageUrl_x3 = $_imageHelper->init($_item, $image_x3)
+                                        ->constrainOnly(TRUE)
+                                        ->keepAspectRatio(TRUE)
+                                        ->keepTransparency(TRUE)
+                                        ->keepFrame(FALSE)
+                                        ->resize(498, ($newHeight_x3+10))
+                                        ->getUrl();
+                    
+                } elseif($productImageWidth === $productImageHeight) {
+                    $orientation = 'square';
+                    $squareImage = $productImageURL;
+                    $squareImage_x2 = $productImageURL_x2;
+                    $squareImage_x3 = $productImageURL_x3;
+                } else {
+                    $orientation = 'placeholder';
+                }
+            ?>
+                <?= /* @escapeNotVerified */ ($iterator++ == 1) ? '<li class="new-item">' : '</li><li class="new-item">' ?>
+                <?php $productImage = $block->getImage($_item, $image) ?>
+                <div class="new-item-image">
+                    <a href="<?= /* @escapeNotVerified */ $_item->getProductUrl() ?>" class="product photo new-item-photo" tabindex="-1">
+                       <?php if($orientation === 'portrait') { ?>
+                            <img  class="lazyload" loading="lazy" width="249" style="width: 249px;" data-src="<?= $resizedPortraitImageUrl; ?>" data-srcset="<?= $resizedPortraitImageUrl_x2; ?> 2x, <?= $resizedPortraitImageUrl_x3; ?> 3x" />
+                        <?php } elseif($orientation === 'landscape') { ?>
+                            <img class="lazyload" loading="lazy" width="249" style="width: 249px;" data-src="<?= $landscapeImage; ?>" data-srcset="<?= $landscapeImage_x2; ?> 2x, <?= $landscapeImage_x3; ?> 3x" />
+                        <?php } elseif($orientation === 'square') { ?>
+                            <img  class="lazyload" loading="lazy" width="249" style="width: 249px;"  data-src="<?= $squareImage; ?>" data-srcset="<?= $squareImage_x2; ?> 2x, <?= $squareImage_x3; ?> 3x" />
+                        <?php } ?>
+                    </a>                            
+                </div>
+                
+                <div class="new-item-details">
+                    <a class="new-item-link" title="<?= $block->escapeHtml($_item->getName()) ?>"
+                       href="<?= /* @escapeNotVerified */ $block->getProductUrl($_item) ?>"
+                       class="new-item-link">
+                        <?= $block->escapeHtml($_item->getName()) ?>
+                    </a>
+          
+                    <?php
+                       // $stockCheck = $StockState->getStockQty($_item->getId(), $_item->getStore()->getWebsiteId());                
+                        if($_item->isSaleable()){ 
+                            echo $block->getProductPriceHtml($_item, $type);
+                        } else {
+                            echo '<div class="price-box sold"><span class="circle"></span><span class="text">SOLD</span></div>';                            
+                        }
+                    ?>
+                </div>
+                <?= ($iterator == count($items)+1) ? '</li>' : '' ?>
+            <?php endforeach ?>
+        </ol>
+    </div>
+    <div class="new-artwork-toolbar bottom">
+        <?= $block->getPagerHtml() ?>
+    </div>
+<?php endif;?>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config>
+    <type name="Magento\Contact\Controller\Index\Post">
+        <plugin name="ContactUsRedirect" type="\SomersetWood\ContactUsRedirect\Plugin\PostPlugin" sortOrder="1" disabled="false"/>
+    </type>
+</config>

@@ -1,0 +1,189 @@
+[10-Feb-2020 17:13:32 UTC] PHP Fatal error:  Uncaught Exception: Warning: session_start(): Failed to decode session object. Session has been destroyed in /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php on line 208 in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 [internal function]: Magento\Framework\App\ErrorHandler->handler(2, 'session_start()...', '/home/somerseta...', 208, Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(208): session_start()
+#2 /home/somersetandwood/public_html/generated/code/Magento/Backend/Model/Auth/Session/Interceptor.php(37): Magento\Framework\Session\SessionManager->start()
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(140): Magento\Backend\Model\Auth\Session\Interceptor->start()
+#4 /home/somersetandwood/public_html/vendor/magento/module-backend/Model/Auth/Session.php(101): Magento\Framework\Session\SessionManager->__construct(Object(Magento\Framew in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php on line 61
+[10-Feb-2020 17:13:32 UTC] PHP Fatal error:  Uncaught Exception: Warning: session_start(): Failed to decode session object. Session has been destroyed in /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php on line 208 in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 [internal function]: Magento\Framework\App\ErrorHandler->handler(2, 'session_start()...', '/home/somerseta...', 208, Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(208): session_start()
+#2 /home/somersetandwood/public_html/generated/code/Magento/Backend/Model/Auth/Session/Interceptor.php(37): Magento\Framework\Session\SessionManager->start()
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(140): Magento\Backend\Model\Auth\Session\Interceptor->start()
+#4 /home/somersetandwood/public_html/vendor/magento/module-backend/Model/Auth/Session.php(101): Magento\Framework\Session\SessionManager->__construct(Object(Magento\Framew in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php on line 61
+[10-Feb-2020 17:13:32 UTC] PHP Fatal error:  Uncaught Exception: Warning: session_start(): Failed to decode session object. Session has been destroyed in /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php on line 208 in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 [internal function]: Magento\Framework\App\ErrorHandler->handler(2, 'session_start()...', '/home/somerseta...', 208, Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(208): session_start()
+#2 /home/somersetandwood/public_html/generated/code/Magento/Backend/Model/Auth/Session/Interceptor.php(37): Magento\Framework\Session\SessionManager->start()
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(140): Magento\Backend\Model\Auth\Session\Interceptor->start()
+#4 /home/somersetandwood/public_html/vendor/magento/module-backend/Model/Auth/Session.php(101): Magento\Framework\Session\SessionManager->__construct(Object(Magento\Framew in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php on line 61
+[10-Feb-2020 17:13:32 UTC] PHP Fatal error:  Uncaught Exception: Warning: session_start(): Failed to decode session object. Session has been destroyed in /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php on line 208 in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 [internal function]: Magento\Framework\App\ErrorHandler->handler(2, 'session_start()...', '/home/somerseta...', 208, Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(208): session_start()
+#2 /home/somersetandwood/public_html/generated/code/Magento/Backend/Model/Auth/Session/Interceptor.php(37): Magento\Framework\Session\SessionManager->start()
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(140): Magento\Backend\Model\Auth\Session\Interceptor->start()
+#4 /home/somersetandwood/public_html/vendor/magento/module-backend/Model/Auth/Session.php(101): Magento\Framework\Session\SessionManager->__construct(Object(Magento\Framew in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php on line 61
+[11-Feb-2020 08:28:59 UTC] PHP Fatal error:  Uncaught Exception: Warning: session_start(): Failed to decode session object. Session has been destroyed in /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php on line 208 in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 [internal function]: Magento\Framework\App\ErrorHandler->handler(2, 'session_start()...', '/home/somerseta...', 208, Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(208): session_start()
+#2 /home/somersetandwood/public_html/generated/code/Magento/Backend/Model/Auth/Session/Interceptor.php(37): Magento\Framework\Session\SessionManager->start()
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(140): Magento\Backend\Model\Auth\Session\Interceptor->start()
+#4 /home/somersetandwood/public_html/vendor/magento/module-backend/Model/Auth/Session.php(101): Magento\Framework\Session\SessionManager->__construct(Object(Magento\Framew in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php on line 61
+[11-Feb-2020 08:28:59 UTC] PHP Fatal error:  Uncaught Exception: Warning: session_start(): Failed to decode session object. Session has been destroyed in /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php on line 208 in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 [internal function]: Magento\Framework\App\ErrorHandler->handler(2, 'session_start()...', '/home/somerseta...', 208, Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(208): session_start()
+#2 /home/somersetandwood/public_html/generated/code/Magento/Backend/Model/Auth/Session/Interceptor.php(37): Magento\Framework\Session\SessionManager->start()
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(140): Magento\Backend\Model\Auth\Session\Interceptor->start()
+#4 /home/somersetandwood/public_html/vendor/magento/module-backend/Model/Auth/Session.php(101): Magento\Framework\Session\SessionManager->__construct(Object(Magento\Framew in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php on line 61
+[11-Feb-2020 08:44:35 UTC] PHP Fatal error:  Uncaught Exception: Warning: session_start(): Failed to decode session object. Session has been destroyed in /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php on line 208 in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 [internal function]: Magento\Framework\App\ErrorHandler->handler(2, 'session_start()...', '/home/somerseta...', 208, Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(208): session_start()
+#2 /home/somersetandwood/public_html/generated/code/Magento/Backend/Model/Auth/Session/Interceptor.php(37): Magento\Framework\Session\SessionManager->start()
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(140): Magento\Backend\Model\Auth\Session\Interceptor->start()
+#4 /home/somersetandwood/public_html/vendor/magento/module-backend/Model/Auth/Session.php(101): Magento\Framework\Session\SessionManager->__construct(Object(Magento\Framew in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php on line 61
+[11-Feb-2020 08:46:49 UTC] PHP Fatal error:  Uncaught Exception: Warning: session_start(): Failed to decode session object. Session has been destroyed in /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php on line 208 in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 [internal function]: Magento\Framework\App\ErrorHandler->handler(2, 'session_start()...', '/home/somerseta...', 208, Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(208): session_start()
+#2 /home/somersetandwood/public_html/generated/code/Magento/Backend/Model/Auth/Session/Interceptor.php(37): Magento\Framework\Session\SessionManager->start()
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(140): Magento\Backend\Model\Auth\Session\Interceptor->start()
+#4 /home/somersetandwood/public_html/vendor/magento/module-backend/Model/Auth/Session.php(101): Magento\Framework\Session\SessionManager->__construct(Object(Magento\Framew in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php on line 61
+[11-Feb-2020 08:46:49 UTC] PHP Fatal error:  Uncaught Exception: Warning: session_start(): Failed to decode session object. Session has been destroyed in /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php on line 208 in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 [internal function]: Magento\Framework\App\ErrorHandler->handler(2, 'session_start()...', '/home/somerseta...', 208, Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(208): session_start()
+#2 /home/somersetandwood/public_html/generated/code/Magento/Backend/Model/Auth/Session/Interceptor.php(37): Magento\Framework\Session\SessionManager->start()
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(140): Magento\Backend\Model\Auth\Session\Interceptor->start()
+#4 /home/somersetandwood/public_html/vendor/magento/module-backend/Model/Auth/Session.php(101): Magento\Framework\Session\SessionManager->__construct(Object(Magento\Framew in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php on line 61
+[11-Feb-2020 08:51:25 UTC] PHP Warning:  require(/home/somersetandwood/public_html/vendor/composer/../ircmaxell/password-compat/lib/password.php): failed to open stream: No such file or directory in /home/somersetandwood/public_html/vendor/composer/autoload_real.php on line 70
+[11-Feb-2020 08:51:25 UTC] PHP Fatal error:  require(): Failed opening required '/home/somersetandwood/public_html/vendor/composer/../ircmaxell/password-compat/lib/password.php' (include_path='/home/somersetandwood/public_html/vendor/magento/zendframework1/library:.:/opt/alt/php72/usr/share/pear') in /home/somersetandwood/public_html/vendor/composer/autoload_real.php on line 70
+[11-Feb-2020 08:51:25 UTC] PHP Warning:  require(/home/somersetandwood/public_html/vendor/composer/../ircmaxell/password-compat/lib/password.php): failed to open stream: No such file or directory in /home/somersetandwood/public_html/vendor/composer/autoload_real.php on line 70
+[11-Feb-2020 08:51:25 UTC] PHP Fatal error:  require(): Failed opening required '/home/somersetandwood/public_html/vendor/composer/../ircmaxell/password-compat/lib/password.php' (include_path='/home/somersetandwood/public_html/vendor/magento/zendframework1/library:.:/opt/alt/php72/usr/share/pear') in /home/somersetandwood/public_html/vendor/composer/autoload_real.php on line 70
+[11-Feb-2020 08:51:55 UTC] PHP Warning:  require(/home/somersetandwood/public_html/vendor/composer/../ircmaxell/password-compat/lib/password.php): failed to open stream: No such file or directory in /home/somersetandwood/public_html/vendor/composer/autoload_real.php on line 70
+[11-Feb-2020 08:51:55 UTC] PHP Fatal error:  require(): Failed opening required '/home/somersetandwood/public_html/vendor/composer/../ircmaxell/password-compat/lib/password.php' (include_path='/home/somersetandwood/public_html/vendor/magento/zendframework1/library:.:/opt/alt/php72/usr/share/pear') in /home/somersetandwood/public_html/vendor/composer/autoload_real.php on line 70
+[11-Feb-2020 08:51:55 UTC] PHP Warning:  require(/home/somersetandwood/public_html/vendor/composer/../ircmaxell/password-compat/lib/password.php): failed to open stream: No such file or directory in /home/somersetandwood/public_html/vendor/composer/autoload_real.php on line 70
+[11-Feb-2020 08:51:55 UTC] PHP Fatal error:  require(): Failed opening required '/home/somersetandwood/public_html/vendor/composer/../ircmaxell/password-compat/lib/password.php' (include_path='/home/somersetandwood/public_html/vendor/magento/zendframework1/library:.:/opt/alt/php72/usr/share/pear') in /home/somersetandwood/public_html/vendor/composer/autoload_real.php on line 70
+[11-Feb-2020 08:52:17 UTC] PHP Warning:  require(/home/somersetandwood/public_html/vendor/composer/../ircmaxell/password-compat/lib/password.php): failed to open stream: No such file or directory in /home/somersetandwood/public_html/vendor/composer/autoload_real.php on line 70
+[11-Feb-2020 08:52:17 UTC] PHP Fatal error:  require(): Failed opening required '/home/somersetandwood/public_html/vendor/composer/../ircmaxell/password-compat/lib/password.php' (include_path='/home/somersetandwood/public_html/vendor/magento/zendframework1/library:.:/opt/alt/php72/usr/share/pear') in /home/somersetandwood/public_html/vendor/composer/autoload_real.php on line 70
+[11-Feb-2020 08:52:17 UTC] PHP Warning:  require(/home/somersetandwood/public_html/vendor/composer/../ircmaxell/password-compat/lib/password.php): failed to open stream: No such file or directory in /home/somersetandwood/public_html/vendor/composer/autoload_real.php on line 70
+[11-Feb-2020 08:52:17 UTC] PHP Fatal error:  require(): Failed opening required '/home/somersetandwood/public_html/vendor/composer/../ircmaxell/password-compat/lib/password.php' (include_path='/home/somersetandwood/public_html/vendor/magento/zendframework1/library:.:/opt/alt/php72/usr/share/pear') in /home/somersetandwood/public_html/vendor/composer/autoload_real.php on line 70
+[11-Feb-2020 08:52:45 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: FilesystemIterator::__construct(/home/somersetandwood/public_html/generated/code/Magento/Backend/Model/Menu/Config): failed to open dir: No such file or directory in /home/somersetandwood/public_html/vendor/magento/framework/Filesystem/Driver/File.php:405
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/magento/framework/Filesystem/Driver/File.php(405): FilesystemIterator->__construct('/home/somerseta...', 12288)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Filesystem/Driver/File.php(410): Magento\Framework\Filesystem\Driver\File->deleteDirectory('/home/somerseta...')
+#2 /home/somersetandwood/public_html/vendor/magento/framework/Filesystem/Driver/File.php(410): Magento\Framework\Filesystem\Driver\File->deleteDirectory('/home/somerseta...')
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Filesystem/Driver/File.php(410): Magento\Framework\Filesystem\Driver\File->deleteDirectory('/home/somerseta...')
+#4 /home/somersetandwood/public_html/ve in /home/somersetandwood/public_html/vendor/magento/framework/Filesystem/Driver/File.php on line 405
+[11-Feb-2020 08:52:45 UTC] PHP Fatal error:  Uncaught Magento\Framework\Exception\FileSystemException: The "/home/somersetandwood/public_html/generated/code/Magento/EncryptionKey/Controller/Adminhtml/Crypt/Key/Index/Interceptor.php" file can't be deleted. Warning!unlink(/home/somersetandwood/public_html/generated/code/Magento/EncryptionKey/Controller/Adminhtml/Crypt/Key/Index/Interceptor.php): No such file or directory The "/home/somersetandwood/public_html/generated/code/Magento/Sales/Controller/Adminhtml/Order/View/Interceptor.php" file can't be deleted. Warning!unlink(/home/somersetandwood/public_html/generated/code/Magento/Sales/Controller/Adminhtml/Order/View/Interceptor.php): No such file or directory The "/home/somersetandwood/public_html/generated/code/Magento/Sales/Controller/Adminhtml/Order/MassUnhold/Interceptor.php" file can't be deleted. Warning!unlink(/home/somersetandwood/public_html/generated/code/Magento/Sales/Controller/Adminhtml/Order/MassUnhold/Interceptor.php): No such file or directory The "/home/somersetandwood/public_html/generat in /home/somersetandwood/public_html/vendor/magento/framework/Filesystem/Directory/Write.php on line 202
+[11-Feb-2020 08:53:08 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: FilesystemIterator::__construct(/home/somersetandwood/public_html/var/cache): failed to open dir: No such file or directory in /home/somersetandwood/public_html/vendor/magento/framework/Filesystem/Driver/File.php:405
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/magento/framework/Filesystem/Driver/File.php(405): FilesystemIterator->__construct('/home/somerseta...', 12288)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Filesystem/Directory/Write.php(196): Magento\Framework\Filesystem\Driver\File->deleteDirectory('/home/somerseta...')
+#2 /home/somersetandwood/public_html/vendor/magento/framework/Code/GeneratedFiles.php(97): Magento\Framework\Filesystem\Directory\Write->delete('var/cache')
+#3 /home/somersetandwood/public_html/vendor/magento/framework/App/ObjectManagerFactory.php(111): Magento\Framework\Code\GeneratedFiles->cleanGeneratedFiles()
+#4 /home/somersetandwood/public_html/vendor/magento/framework/App/Bootstrap.php(211): Magento\Framework\App\O in /home/somersetandwood/public_html/vendor/magento/framework/Filesystem/Driver/File.php on line 405
+[11-Feb-2020 08:59:18 UTC] PHP Fatal error:  Uncaught Exception: Warning: session_start(): Failed to decode session object. Session has been destroyed in /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php on line 208 in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 [internal function]: Magento\Framework\App\ErrorHandler->handler(2, 'session_start()...', '/home/somerseta...', 208, Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(208): session_start()
+#2 /home/somersetandwood/public_html/generated/code/Magento/Backend/Model/Auth/Session/Interceptor.php(167): Magento\Framework\Session\SessionManager->start()
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(140): Magento\Backend\Model\Auth\Session\Interceptor->start()
+#4 /home/somersetandwood/public_html/vendor/magento/module-backend/Model/Auth/Session.php(101): Magento\Framework\Session\SessionManager->__construct(Object(Magento\Frame in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php on line 61
+[11-Feb-2020 08:59:18 UTC] PHP Fatal error:  Uncaught Exception: Warning: session_start(): Failed to decode session object. Session has been destroyed in /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php on line 208 in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 [internal function]: Magento\Framework\App\ErrorHandler->handler(2, 'session_start()...', '/home/somerseta...', 208, Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(208): session_start()
+#2 /home/somersetandwood/public_html/generated/code/Magento/Backend/Model/Auth/Session/Interceptor.php(167): Magento\Framework\Session\SessionManager->start()
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(140): Magento\Backend\Model\Auth\Session\Interceptor->start()
+#4 /home/somersetandwood/public_html/vendor/magento/module-backend/Model/Auth/Session.php(101): Magento\Framework\Session\SessionManager->__construct(Object(Magento\Frame in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php on line 61
+[11-Feb-2020 09:05:16 UTC] PHP Fatal error:  Uncaught Exception: Warning: session_start(): Failed to decode session object. Session has been destroyed in /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php on line 208 in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 [internal function]: Magento\Framework\App\ErrorHandler->handler(2, 'session_start()...', '/home/somerseta...', 208, Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(208): session_start()
+#2 /home/somersetandwood/public_html/generated/code/Magento/Backend/Model/Auth/Session/Interceptor.php(167): Magento\Framework\Session\SessionManager->start()
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(140): Magento\Backend\Model\Auth\Session\Interceptor->start()
+#4 /home/somersetandwood/public_html/vendor/magento/module-backend/Model/Auth/Session.php(101): Magento\Framework\Session\SessionManager->__construct(Object(Magento\Frame in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php on line 61
+[11-Feb-2020 11:44:25 UTC] PHP Fatal error:  Uncaught Exception: Warning: session_start(): Failed to decode session object. Session has been destroyed in /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php on line 208 in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 [internal function]: Magento\Framework\App\ErrorHandler->handler(2, 'session_start()...', '/home/somerseta...', 208, Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(208): session_start()
+#2 /home/somersetandwood/public_html/generated/code/Magento/Backend/Model/Auth/Session/Interceptor.php(167): Magento\Framework\Session\SessionManager->start()
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(140): Magento\Backend\Model\Auth\Session\Interceptor->start()
+#4 /home/somersetandwood/public_html/vendor/magento/module-backend/Model/Auth/Session.php(101): Magento\Framework\Session\SessionManager->__construct(Object(Magento\Frame in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php on line 61
+[11-Feb-2020 11:44:25 UTC] PHP Fatal error:  Uncaught Exception: Warning: session_start(): Failed to decode session object. Session has been destroyed in /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php on line 208 in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 [internal function]: Magento\Framework\App\ErrorHandler->handler(2, 'session_start()...', '/home/somerseta...', 208, Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(208): session_start()
+#2 /home/somersetandwood/public_html/generated/code/Magento/Backend/Model/Auth/Session/Interceptor.php(167): Magento\Framework\Session\SessionManager->start()
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(140): Magento\Backend\Model\Auth\Session\Interceptor->start()
+#4 /home/somersetandwood/public_html/vendor/magento/module-backend/Model/Auth/Session.php(101): Magento\Framework\Session\SessionManager->__construct(Object(Magento\Frame in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php on line 61
+[11-Feb-2020 11:44:25 UTC] PHP Fatal error:  Uncaught Exception: Warning: session_start(): Failed to decode session object. Session has been destroyed in /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php on line 208 in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 [internal function]: Magento\Framework\App\ErrorHandler->handler(2, 'session_start()...', '/home/somerseta...', 208, Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(208): session_start()
+#2 /home/somersetandwood/public_html/generated/code/Magento/Backend/Model/Auth/Session/Interceptor.php(167): Magento\Framework\Session\SessionManager->start()
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(140): Magento\Backend\Model\Auth\Session\Interceptor->start()
+#4 /home/somersetandwood/public_html/vendor/magento/module-backend/Model/Auth/Session.php(101): Magento\Framework\Session\SessionManager->__construct(Object(Magento\Frame in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php on line 61
+[11-Feb-2020 11:44:25 UTC] PHP Fatal error:  Uncaught Exception: Warning: session_start(): Failed to decode session object. Session has been destroyed in /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php on line 208 in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 [internal function]: Magento\Framework\App\ErrorHandler->handler(2, 'session_start()...', '/home/somerseta...', 208, Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(208): session_start()
+#2 /home/somersetandwood/public_html/generated/code/Magento/Backend/Model/Auth/Session/Interceptor.php(167): Magento\Framework\Session\SessionManager->start()
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(140): Magento\Backend\Model\Auth\Session\Interceptor->start()
+#4 /home/somersetandwood/public_html/vendor/magento/module-backend/Model/Auth/Session.php(101): Magento\Framework\Session\SessionManager->__construct(Object(Magento\Frame in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php on line 61
+[11-Feb-2020 12:07:27 UTC] PHP Fatal error:  Uncaught Exception: Warning: session_start(): Failed to decode session object. Session has been destroyed in /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php on line 208 in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 [internal function]: Magento\Framework\App\ErrorHandler->handler(2, 'session_start()...', '/home/somerseta...', 208, Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(208): session_start()
+#2 /home/somersetandwood/public_html/generated/code/Magento/Backend/Model/Auth/Session/Interceptor.php(167): Magento\Framework\Session\SessionManager->start()
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(140): Magento\Backend\Model\Auth\Session\Interceptor->start()
+#4 /home/somersetandwood/public_html/vendor/magento/module-backend/Model/Auth/Session.php(101): Magento\Framework\Session\SessionManager->__construct(Object(Magento\Frame in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php on line 61
+[11-Feb-2020 12:07:27 UTC] PHP Fatal error:  Uncaught Exception: Warning: session_start(): Failed to decode session object. Session has been destroyed in /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php on line 208 in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 [internal function]: Magento\Framework\App\ErrorHandler->handler(2, 'session_start()...', '/home/somerseta...', 208, Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(208): session_start()
+#2 /home/somersetandwood/public_html/generated/code/Magento/Backend/Model/Auth/Session/Interceptor.php(167): Magento\Framework\Session\SessionManager->start()
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(140): Magento\Backend\Model\Auth\Session\Interceptor->start()
+#4 /home/somersetandwood/public_html/vendor/magento/module-backend/Model/Auth/Session.php(101): Magento\Framework\Session\SessionManager->__construct(Object(Magento\Frame in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php on line 61
+[11-Feb-2020 13:52:48 UTC] PHP Fatal error:  Uncaught Exception: Warning: session_start(): Failed to decode session object. Session has been destroyed in /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php on line 208 in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 [internal function]: Magento\Framework\App\ErrorHandler->handler(2, 'session_start()...', '/home/somerseta...', 208, Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(208): session_start()
+#2 /home/somersetandwood/public_html/generated/code/Magento/Backend/Model/Auth/Session/Interceptor.php(167): Magento\Framework\Session\SessionManager->start()
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(140): Magento\Backend\Model\Auth\Session\Interceptor->start()
+#4 /home/somersetandwood/public_html/vendor/magento/module-backend/Model/Auth/Session.php(101): Magento\Framework\Session\SessionManager->__construct(Object(Magento\Frame in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php on line 61
+[11-Feb-2020 13:52:48 UTC] PHP Fatal error:  Uncaught Exception: Warning: session_start(): Failed to decode session object. Session has been destroyed in /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php on line 208 in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 [internal function]: Magento\Framework\App\ErrorHandler->handler(2, 'session_start()...', '/home/somerseta...', 208, Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(208): session_start()
+#2 /home/somersetandwood/public_html/generated/code/Magento/Backend/Model/Auth/Session/Interceptor.php(167): Magento\Framework\Session\SessionManager->start()
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(140): Magento\Backend\Model\Auth\Session\Interceptor->start()
+#4 /home/somersetandwood/public_html/vendor/magento/module-backend/Model/Auth/Session.php(101): Magento\Framework\Session\SessionManager->__construct(Object(Magento\Frame in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php on line 61
+[11-Feb-2020 14:21:44 UTC] PHP Fatal error:  Uncaught Exception: Warning: session_start(): Failed to decode session object. Session has been destroyed in /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php on line 208 in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 [internal function]: Magento\Framework\App\ErrorHandler->handler(2, 'session_start()...', '/home/somerseta...', 208, Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(208): session_start()
+#2 /home/somersetandwood/public_html/generated/code/Magento/Backend/Model/Auth/Session/Interceptor.php(167): Magento\Framework\Session\SessionManager->start()
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(140): Magento\Backend\Model\Auth\Session\Interceptor->start()
+#4 /home/somersetandwood/public_html/vendor/magento/module-backend/Model/Auth/Session.php(101): Magento\Framework\Session\SessionManager->__construct(Object(Magento\Frame in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php on line 61
+[11-Feb-2020 14:21:44 UTC] PHP Fatal error:  Uncaught Exception: Warning: session_start(): Failed to decode session object. Session has been destroyed in /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php on line 208 in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php:61
+Stack trace:
+#0 [internal function]: Magento\Framework\App\ErrorHandler->handler(2, 'session_start()...', '/home/somerseta...', 208, Array)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(208): session_start()
+#2 /home/somersetandwood/public_html/generated/code/Magento/Backend/Model/Auth/Session/Interceptor.php(167): Magento\Framework\Session\SessionManager->start()
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Session/SessionManager.php(140): Magento\Backend\Model\Auth\Session\Interceptor->start()
+#4 /home/somersetandwood/public_html/vendor/magento/module-backend/Model/Auth/Session.php(101): Magento\Framework\Session\SessionManager->__construct(Object(Magento\Frame in /home/somersetandwood/public_html/vendor/magento/framework/App/ErrorHandler.php on line 61
+[12-Feb-2020 10:31:41 UTC] PHP Fatal error:  Uncaught UnexpectedValueException: FilesystemIterator::__construct(/home/somersetandwood/public_html/generated/code/Klarna/Core/Model/Checkout/Orderline/Collector): failed to open dir: No such file or directory in /home/somersetandwood/public_html/vendor/magento/framework/Filesystem/Driver/File.php:405
+Stack trace:
+#0 /home/somersetandwood/public_html/vendor/magento/framework/Filesystem/Driver/File.php(405): FilesystemIterator->__construct('/home/somerseta...', 12288)
+#1 /home/somersetandwood/public_html/vendor/magento/framework/Filesystem/Driver/File.php(410): Magento\Framework\Filesystem\Driver\File->deleteDirectory('/home/somerseta...')
+#2 /home/somersetandwood/public_html/vendor/magento/framework/Filesystem/Driver/File.php(410): Magento\Framework\Filesystem\Driver\File->deleteDirectory('/home/somerseta...')
+#3 /home/somersetandwood/public_html/vendor/magento/framework/Filesystem/Driver/File.php(410): Magento\Framework\Filesystem\Driver\File->deleteDirectory('/home/somerseta...')
+#4 /home/somersetandwood/p in /home/somersetandwood/public_html/vendor/magento/framework/Filesystem/Driver/File.php on line 405
+[12-Feb-2020 10:31:41 UTC] PHP Fatal error:  Uncaught Magento\Framework\Exception\FileSystemException: The "/home/somersetandwood/public_html/generated/code/Klarna/Core/Api/VersionInterfaceFactory.php" file can't be deleted. Warning!unlink(/home/somersetandwood/public_html/generated/code/Klarna/Core/Api/VersionInterfaceFactory.php): No such file or directory The "/home/somersetandwood/public_html/generated/code/Amazon/Payment/Domain/AmazonCaptureResponseFactory.php" file can't be deleted. Warning!unlink(/home/somersetandwood/public_html/generated/code/Amazon/Payment/Domain/AmazonCaptureResponseFactory.php): No such file or directory The "/home/somersetandwood/public_html/generated/code/Amazon/Payment/Domain/Details/AmazonAuthorizationDetailsFactory.php" file can't be deleted. Warning!unlink(/home/somersetandwood/public_html/generated/code/Amazon/Payment/Domain/Details/AmazonAuthorizationDetailsFactory.php): No such file or directory The "/home/somersetandwood/public_html/generated/code/Amazon/Payment/Domain/AmazonConstraintFactory.php" file can't be del in /home/somersetandwood/public_html/vendor/magento/framework/Filesystem/Directory/Write.php on line 202

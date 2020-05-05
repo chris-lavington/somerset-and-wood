@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+	<widget class="SomersetWood\ExhibitionSlideshowWidget\Block\ExhibitionSlideshow" id="somersetwood_exhibitionslideshowwidget_exhibitionslideshowwidget">
+		<label>SW Exhibition Slideshow Widget</label>
+		<description></description>
+		<parameters>
+			<parameter name="exhibitionslideshowimage1" xsi:type="block" visible="true" sort_order="100" required="true">
+	            <label translate="true">Slide 1</label>
+	            <block class="Staempfli\WidgetExtraFields\Block\Adminhtml\ImageField"/>
+	        </parameter>
+	        <parameter name="exhibitionslideshowimage2" xsi:type="block" visible="true" sort_order="100" required="false">
+	            <label translate="true">Slide 2</label>
+	            <block class="Staempfli\WidgetExtraFields\Block\Adminhtml\ImageField"/>
+	        </parameter>
+	        <parameter name="exhibitionslideshowimage3" xsi:type="block" visible="true" sort_order="100" required="false">
+	            <label translate="true">Slide 3</label>
+	            <block class="Staempfli\WidgetExtraFields\Block\Adminhtml\ImageField"/>
+	        </parameter> 
+		</parameters>
+	</widget>
+</widgets>

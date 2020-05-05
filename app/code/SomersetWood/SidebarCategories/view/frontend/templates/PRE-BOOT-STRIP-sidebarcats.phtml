@@ -1,0 +1,292 @@
+<?php 
+$categories = $block->getStoreCategories(true,false,true);
+//$categories = $block->getCategoryCollection();
+$getCategory = $block->getCurrentCategory();
+if(isset($getCategory)) { $currentCategory = $getCategory->getId(); 
+$parentIdentifer = explode('/', $getCategory->getPath()); }
+if(isset($parentIdentifer[2])) { $parentIdentiferIdLevel1 = $parentIdentifer[2]; }
+if(isset($parentIdentifer[3])) { $parentIdentiferIdLevel2 = $parentIdentifer[3]; }
+if(isset($parentIdentifer[4])) { $parentIdentiferIdLevel3 = $parentIdentifer[4]; }
+?>
+<div class="sidebar-category-list">
+	<div class="accordion accordion-level1" id="levelOneAccordion">
+	<?php
+	$i='';
+	foreach($categories as $category){
+	 	if($category->getName() !='View All' && $category->getName() !='Ebay' && $category->getName()!='Exhibition') {
+			if($category->getName() !='View All' && $category->getName() !='Ebay'){ echo '<div class="card card-level1">'; }
+	?>
+			<div class="card-header" id="heading<?php echo $category->getId(); ?>">
+      			<h4 class="mb-0">
+      				<a data-toggle="collapse" data-target="#collapse<?php echo $category->getId(); ?>" aria-expanded="true" aria-controls="collapse<?php echo $category->getId(); ?>">
+      					<!-- category name level 1 -->
+						<?php 
+							if(isset($parentIdentiferIdLevel1)&&$parentIdentiferIdLevel1 === $category->getId()) {
+								echo $category->getName();
+							} else {
+								echo $category->getName();
+							}
+						?>
+						<?php
+							if(isset($parentIdentiferIdLevel1)&&$parentIdentiferIdLevel1 === $category->getId()) {
+						  		if($category->hasChildren()){ echo'<i class="feather icon-minus"></i>'; }
+						 	} else {
+						  		if($category->hasChildren()){ echo'<i class="feather icon-plus"></i>'; }
+						  	} 
+						?>
+					</a>
+				</h4>
+			</div><!-- closes .card-header -->
+			<?php if($category->hasChildren()) {
+		     	$cats1 = $block->getCategorymodel($category->getId());
+		     	$childCats1 = $cats1->getChildrenCategories();
+		     	$childCats1->clear();
+		     	$childCats1->addAttributeToFilter('include_in_menu',1);
+		     	$childCats1->load();
+
+		     	$childCats1_sorter = array();
+		    ?>
+		    <div id="collapse<?php echo $category->getId(); ?>" class="sidebarcollapse collapse <?php if(isset($parentIdentiferIdLevel1)&&$parentIdentiferIdLevel1 === $category->getId()) { echo 'show';}?>" aria-labelledby="heading<?php echo $category->getId(); ?>" data-parent="#levelOneAccordion">
+		      <div class="card-body">
+				<?php 
+			    	//Collections list
+			    	if ($category->getName() === 'Collections') {
+			    ?>
+						<div class="accordion accordion-level2" id="collectionsAccordion">
+							<?php 
+								foreach($childCats1 as $childCat1) {
+									$cats2 = $block->getCategorymodel($childCat1->getId());
+			     					$childCats2 = $cats2->getChildrenCategories();
+			     					$childCats2->clear();
+		     						$childCats2->addAttributeToFilter('include_in_menu',1);
+		     						$childCats2->load();
+			     					$childCats2_sorter = array();
+			     			?>
+  										<div class="card">
+  											<div class="card-header" id="heading<?php echo $childCat1->getId(); ?>">
+										      <h4 class="mb-0">
+										        <a data-toggle="collapse" data-target="#collapse<?php echo $childCat1->getId(); ?>" aria-expanded="true" aria-controls="collapse<?php echo $childCat1->getId(); ?>">
+										         	<?php 
+										        		if(!$childCat1->hasChildren()){ 
+										        			echo '<a href="'.$childCat1->getUrl().'">'; 
+										        		}
+									    	 				echo (isset($parentIdentiferIdLevel2))?($parentIdentiferIdLevel2 === $childCat1->getId()?'<strong>'.$childCat1->getName().'</strong>':$childCat1->getName()):$childCat1->getName();
+															//echo '<span class="icon-container-level2">';
+															 	if(isset($parentIdentiferIdLevel2)&&$parentIdentiferIdLevel2 === $childCat1->getId()) {
+															 		if($childCat1->hasChildren()){ echo'<i class="feather icon-minus"></i>'; }
+															 	} else {
+															 		if($childCat1->hasChildren()){ echo'<i class="feather icon-plus"></i>'; }
+															 	}
+															//echo '</span>';
+										    	 			if(!$childCat1->hasChildren()){ 
+										    	 				echo '</a>';
+										    	 			}
+										        	?>
+										        </a>
+										     </h4>
+										    </div> <!-- closes .card-header -->
+										   <?php if($childCat1->hasChildren()){ ?>
+										    <div id="collapse<?php echo $childCat1->getId(); ?>" class="collapse <?php if(isset($parentIdentiferIdLevel2)&&$parentIdentiferIdLevel2 === $childCat1->getId()) { echo 'show';}?>" aria-labelledby="heading<?php echo $childCat1->getId(); ?>" data-parent="#collectionsAccordion">
+										      <div class="card-body">
+													<ul>
+										    			<?php
+											    	 		foreach($childCats2 as $childCat2) {
+																echo '<li>';
+													    	 		echo '<a class="category-two-link" href="'.$childCat2->getUrl().'">';
+														    	 		if (isset($currentCategory)&&$childCat2->getId() === $currentCategory) {
+													    	 				echo '<strong>'.$childCat2->getName().'</strong>';
+													    	 			} else {
+													    	 				echo $childCat2->getName();
+													    	 			}
+													    	 		echo '</a>';	    	 			
+													    	 	echo '</li>';
+													     	}
+												    	?>
+						    						</ul>
+										      </div>
+    										</div>
+    									<?php } ?>
+  										</div> <!-- closes .card-->
+			     			<?php
+								} //closes foreach($childCats1 as $childCat1)
+							?>
+						</div> <!-- closes #collectionsAccordion -->
+			    <?php
+			    	} // END Collections list LOOP
+
+			    	//age list
+			    	elseif ($category->getName() === 'Age') {
+			    ?>
+						<div class="accordion accordion-level2" id="ageAccordion">
+							<?php 
+								foreach($childCats1 as $childCat1) {
+									$cats2 = $block->getCategorymodel($childCat1->getId());
+			     					$childCats2 = $cats2->getChildrenCategories();
+			     					$childCats2->clear();
+		     						$childCats2->addAttributeToFilter('include_in_menu',1);
+		     						$childCats2->load();
+			     					$childCats2_sorter = array();
+			     			?>
+  										<div class="card">
+  											<div class="card-header" id="heading<?php echo $childCat1->getId(); ?>">
+										      <h4 class="mb-0">
+										        <a data-toggle="collapse" data-target="#collapse<?php echo $childCat1->getId(); ?>" aria-expanded="true" aria-controls="collapse<?php echo $childCat1->getId(); ?>">
+										         	<?php 
+										        		if(!$childCat1->hasChildren()){ 
+										        			echo '<a class="" href="'.$childCat1->getUrl().'">'; 
+										        		}
+									    	 				echo (isset($parentIdentiferIdLevel2))?($parentIdentiferIdLevel2 === $childCat1->getId()?'<strong>'.$childCat1->getName().'</strong>':$childCat1->getName()):$childCat1->getName();
+															//echo '<span class="icon-container-level2">';
+															 	if(isset($parentIdentiferIdLevel2)&&$parentIdentiferIdLevel2 === $childCat1->getId()) {
+															 		if($childCat1->hasChildren()){ echo'<i class="feather icon-minus"></i>'; }
+															 	} else {
+															 		if($childCat1->hasChildren()){ echo'<i class="feather icon-plus"></i>'; }
+															 	}
+															//echo '</span>';
+										    	 			if(!$childCat1->hasChildren()){ 
+										    	 				echo '</a>';
+										    	 			}
+										        	?>
+										        </a>
+										     </h4>
+										    </div> <!-- closes .card-header -->
+										   <?php if($childCat1->hasChildren()){ ?>
+										    <div id="collapse<?php echo $childCat1->getId(); ?>" class="collapse <?php if(isset($parentIdentiferIdLevel2)&&$parentIdentiferIdLevel2 === $childCat1->getId()) { echo 'show';}?>" aria-labelledby="heading<?php echo $childCat1->getId(); ?>" data-parent="#ageAccordion">
+										      <div class="card-body">
+													<ul>
+										    			<?php
+											    	 		foreach($childCats2 as $childCat2) {
+													     		//$childCats2_sorter[$childCat2->getName()] = array('url2'=>$childCat2->getUrl(),'id2'=>$childCat2->getId());
+													     		echo '<li>';
+													    	 		echo '<a class="category-two-link" href="'.$childCat2->getUrl().'">';
+														    	 		if (isset($currentCategory)&&$childCat2->getId() === $currentCategory) {
+													    	 				echo '<strong>'.$childCat2->getName().'</strong>';
+													    	 			} else {
+													    	 				echo $childCat2->getName();
+													    	 			}
+													    	 		echo '</a>';	    	 			
+													    	 	echo '</li>';
+													     	}
+												    	?>
+						    						</ul>
+										      </div>
+    										</div>
+    									<?php } ?>
+  										</div> <!-- closes .card-->
+			     			<?php
+								} //closes foreach($childCats1 as $childCat1)
+							?>
+						</div> <!-- closes #ageAccordion -->
+			    <?php
+			    	} // END Age list LOOP
+
+			    	//Artist sort by last name
+			    	elseif ($category->getName() === 'Artist') {
+			    ?>
+						<ul>
+							<?php 
+								foreach($childCats1 as $childCat1) {
+									$productCount = $childCat1->getProductCount();
+									$string = $childCat1->getName();
+		                  			$pieces = explode(' ', $string);
+		                  			$last_name = array_pop($pieces);
+		                  			$name_remainder = implode(' ',$pieces);
+		                  			$artist_sorter[$last_name] = array('first_names'=>$name_remainder,'url'=>$childCat1->getUrl(),'id'=>$childCat1->getId(),'productCount'=>$childCat1->getProductCount());
+						     		// $cats2 = $block->getCategorymodel($childCat1->getId());
+					     			// $childCats2 = $cats2->getChildrenCategories();
+
+								}
+								if ($category->getName() === 'Artist') {
+					    			ksort($artist_sorter,SORT_NATURAL);	
+					    		}
+					    	?>
+							<?php
+					    		foreach ($artist_sorter as $surname => $properties){
+							    	 	$url = $properties['url'];
+							    	 	$id = $properties['id'];
+							    	 	$firstNames = $properties['first_names'];
+							    	 	$productCount = $properties['productCount'];
+						    	 		if ($productCount >= 1) {
+						    	 			echo '<li>';
+								    	 		echo '<a class="category-two-link" href="'.$url.'">';
+								    	 			if (isset($currentCategory)&&$id === $currentCategory) {
+								    	 				echo '<span class="current-category surname">'.$surname.'</span>';
+								    	 				if ($firstNames !='') {
+								    	 					echo '<span class="seperator">, </span>';
+								    	 				}
+								    	 				echo '<span class="firstNames">'.$firstNames.'</span';
+								    	 			} else {
+								    	 				echo '<span class="surname">'.$surname.'</span>';
+								    	 				if ($firstNames !='') {
+								    	 					echo '<span class="seperator">, </span>';
+								    	 				}
+								    	 				echo '<span class="firstNames">'.$firstNames.'</span>';
+								    	 			}
+								    	 		echo '</a>';
+								    	 	echo '</li>';
+							    	 	}
+							    	}
+							?>
+						</ul> <!-- closes artist UL-->
+			    <?php
+
+			    	} // END Artist list LOOP
+			    	//All other categories
+			    	else {
+			    ?>
+					<?php 
+						foreach($childCats1 as $childCat1) {
+							$productCount = $childCat1->getProductCount();
+							$childCats1_sorter[$childCat1->getName()] = array('url'=>$childCat1->getUrl(),'id'=>$childCat1->getId(),'productCount'=>$childCat1->getProductCount());
+				     		// $cats2 = $block->getCategorymodel($childCat1->getId());
+			     			// $childCats2 = $cats2->getChildrenCategories();		
+				    	}
+			    		if ($category->getName() != 'Age' || $category->getName() != 'Collections') {
+			    			ksort($childCats1_sorter,SORT_NATURAL);	
+			    		}
+			    		echo '<ul>';
+	    				foreach ($childCats1_sorter as $name => $properties) {
+				    	 	$url = $properties['url'];
+				    	 	$id = $properties['id'];
+				    	 	$productCount = $properties['productCount'];
+				    	 	if ($category->getName() === 'Artist') {
+				    	 		if ($productCount >= 1) {
+						    	 	echo '<li>';
+						    	 		echo '<a class="category-two-link" href="'.$url.'">';
+						    	 			if (isset($currentCategory)&&$id === $currentCategory) {
+						    	 				echo '<strong>'.$name.'</strong>';
+						    	 			} else {
+						    	 				echo $name;
+						    	 			}
+						    	 		echo '</a>';
+						    	 	echo '</li>';
+					    	 	}
+				    	 	} else {
+				    	 		
+								echo '<li>';
+					    	 		echo '<a class="category-two-link" href="'.$url.'">';
+					    	 			if (isset($currentCategory)&&$id === $currentCategory) {
+					    	 				echo '<strong>'.$name.'</strong>';
+					    	 			} else {
+					    	 				echo $name;
+					    	 			}
+					    	 		echo '</a>';
+					    	 	echo '</li>';
+				    	 	}
+				    	}
+				    	echo '</ul>';
+					?>	
+			    <?php
+			    	} // END Other list LOOP
+			    ?>
+		      </div>
+		    </div>
+		    <?php } // closes if($category->hasChildren() L:32 ?>
+		</div> <!-- closes .card -->
+		<?php
+			}//closes if($category->getName() !='View All')
+		$i++; 
+		} //closes foreach($categories as $category)
+		?>
+	</div><!-- closes first accordion -->
+	</div><!-- closes .sidebar-category-list -->

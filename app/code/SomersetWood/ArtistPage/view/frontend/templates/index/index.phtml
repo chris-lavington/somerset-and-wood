@@ -1,0 +1,134 @@
+<?php
+
+$artists = $block->getArtists(4645);
+function removeAccents($str) {
+  $a = array('À', 'Á', 'Â', 'Ã', 'Ä', 'Å', 'Æ', 'Ç', 'È', 'É', 'Ê', 'Ë', 'Ì', 'Í', 'Î', 'Ï', 'Ð', 'Ñ', 'Ò', 'Ó', 'Ô', 'Õ', 'Ö', 'Ø', 'Ù', 'Ú', 'Û', 'Ü', 'Ý', 'ß', 'à', 'á', 'â', 'ã', 'ä', 'å', 'æ', 'ç', 'è', 'é', 'ê', 'ë', 'ì', 'í', 'î', 'ï', 'ñ', 'ò', 'ó', 'ô', 'õ', 'ö', 'ø', 'ù', 'ú', 'û', 'ü', 'ý', 'ÿ', 'Ā', 'ā', 'Ă', 'ă', 'Ą', 'ą', 'Ć', 'ć', 'Ĉ', 'ĉ', 'Ċ', 'ċ', 'Č', 'č', 'Ď', 'ď', 'Đ', 'đ', 'Ē', 'ē', 'Ĕ', 'ĕ', 'Ė', 'ė', 'Ę', 'ę', 'Ě', 'ě', 'Ĝ', 'ĝ', 'Ğ', 'ğ', 'Ġ', 'ġ', 'Ģ', 'ģ', 'Ĥ', 'ĥ', 'Ħ', 'ħ', 'Ĩ', 'ĩ', 'Ī', 'ī', 'Ĭ', 'ĭ', 'Į', 'į', 'İ', 'ı', 'Ĳ', 'ĳ', 'Ĵ', 'ĵ', 'Ķ', 'ķ', 'Ĺ', 'ĺ', 'Ļ', 'ļ', 'Ľ', 'ľ', 'Ŀ', 'ŀ', 'Ł', 'ł', 'Ń', 'ń', 'Ņ', 'ņ', 'Ň', 'ň', 'ŉ', 'Ō', 'ō', 'Ŏ', 'ŏ', 'Ő', 'ő', 'Œ', 'œ', 'Ŕ', 'ŕ', 'Ŗ', 'ŗ', 'Ř', 'ř', 'Ś', 'ś', 'Ŝ', 'ŝ', 'Ş', 'ş', 'Š', 'š', 'Ţ', 'ţ', 'Ť', 'ť', 'Ŧ', 'ŧ', 'Ũ', 'ũ', 'Ū', 'ū', 'Ŭ', 'ŭ', 'Ů', 'ů', 'Ű', 'ű', 'Ų', 'ų', 'Ŵ', 'ŵ', 'Ŷ', 'ŷ', 'Ÿ', 'Ź', 'ź', 'Ż', 'ż', 'Ž', 'ž', 'ſ', 'ƒ', 'Ơ', 'ơ', 'Ư', 'ư', 'Ǎ', 'ǎ', 'Ǐ', 'ǐ', 'Ǒ', 'ǒ', 'Ǔ', 'ǔ', 'Ǖ', 'ǖ', 'Ǘ', 'ǘ', 'Ǚ', 'ǚ', 'Ǜ', 'ǜ', 'Ǻ', 'ǻ', 'Ǽ', 'ǽ', 'Ǿ', 'ǿ', 'Ά', 'ά', 'Έ', 'έ', 'Ό', 'ό', 'Ώ', 'ώ', 'Ί', 'ί', 'ϊ', 'ΐ', 'Ύ', 'ύ', 'ϋ', 'ΰ', 'Ή', 'ή');
+  $b = array('A', 'A', 'A', 'A', 'A', 'A', 'AE', 'C', 'E', 'E', 'E', 'E', 'I', 'I', 'I', 'I', 'D', 'N', 'O', 'O', 'O', 'O', 'O', 'O', 'U', 'U', 'U', 'U', 'Y', 's', 'a', 'a', 'a', 'a', 'a', 'a', 'ae', 'c', 'e', 'e', 'e', 'e', 'i', 'i', 'i', 'i', 'n', 'o', 'o', 'o', 'o', 'o', 'o', 'u', 'u', 'u', 'u', 'y', 'y', 'A', 'a', 'A', 'a', 'A', 'a', 'C', 'c', 'C', 'c', 'C', 'c', 'C', 'c', 'D', 'd', 'D', 'd', 'E', 'e', 'E', 'e', 'E', 'e', 'E', 'e', 'E', 'e', 'G', 'g', 'G', 'g', 'G', 'g', 'G', 'g', 'H', 'h', 'H', 'h', 'I', 'i', 'I', 'i', 'I', 'i', 'I', 'i', 'I', 'i', 'IJ', 'ij', 'J', 'j', 'K', 'k', 'L', 'l', 'L', 'l', 'L', 'l', 'L', 'l', 'l', 'l', 'N', 'n', 'N', 'n', 'N', 'n', 'n', 'O', 'o', 'O', 'o', 'O', 'o', 'OE', 'oe', 'R', 'r', 'R', 'r', 'R', 'r', 'S', 's', 'S', 's', 'S', 's', 'S', 's', 'T', 't', 'T', 't', 'T', 't', 'U', 'u', 'U', 'u', 'U', 'u', 'U', 'u', 'U', 'u', 'U', 'u', 'W', 'w', 'Y', 'y', 'Y', 'Z', 'z', 'Z', 'z', 'Z', 'z', 's', 'f', 'O', 'o', 'U', 'u', 'A', 'a', 'I', 'i', 'O', 'o', 'U', 'u', 'U', 'u', 'U', 'u', 'U', 'u', 'U', 'u', 'A', 'a', 'AE', 'ae', 'O', 'o', 'Α', 'α', 'Ε', 'ε', 'Ο', 'ο', 'Ω', 'ω', 'Ι', 'ι', 'ι', 'ι', 'Υ', 'υ', 'υ', 'υ', 'Η', 'η');
+  return str_replace($a, $b, $str);
+}
+?>
+<div class="artists-container">
+  <div class="artist-az">
+  <?php //echo 'select: '.$artists->getSelect(); ?>  
+    <!-- A-Z links -->
+    
+    <?php
+     foreach(range('A','Z') as $letterhead) { 
+        echo '<div class="letterhead">';
+          echo '<h3><a href="/artists#'.$letterhead.'">'.$letterhead.'</a></h3>';
+        echo '</div>';
+      } 
+    ?>
+  </div><!-- closes A-Z links row --> 
+
+  <div class="letter-content">
+  <?php 
+  foreach($artists as $artist_key=>$artist) {
+    $string = $artist->getName();
+    $cleaned_string = removeAccents($string);
+    $pieces = explode(' ', $cleaned_string);
+    $last_word = array_pop($pieces);
+    $first_word = array_shift($pieces);
+    $includeInMenu = $artist->getIncludeInMenu();
+    $artist_passer[] = array('full_name'=>$artist->getName(),'url'=>$artist->getUrl(),'category_id'=>$artist->getId(),'include_in_menu'=>$includeInMenu);
+  }
+
+  foreach ($artist_passer as $key => $properties) {
+      $artist_category_name = $properties['full_name'];
+      $artist_url = $properties['url'];
+      $category_id = $properties['category_id'];
+      $include_in_menu = $properties['include_in_menu'];
+      $artist_products = $block->getCategoryProducts($category_id);
+//var_dump($artist_products);
+      $counter=0;
+      foreach ($artist_products as $artist_product) {
+        
+        $concatenated_name = $artist_product->getData('artist_concatenated_name');
+        $firstname = $artist_product->getData('artworks_artist_firstname');
+        $middlename = $artist_product->getData('artworks_artist_middlename');
+        $lastname = $artist_product->getData('artworks_artist_lastname');
+        $prefix = $artist_product->getData('artworks_artist_prefix');
+        $suffix = $artist_product->getData('artworks_artist_suffix');      
+
+        if(++$counter==1) break;
+      }
+      $alphabet = substr($lastname, 0, 1);
+      $alphabet_count_array[] = $alphabet;
+      $sorter_index = str_replace(' ', '', strtolower(removeAccents($lastname.$firstname).$key));
+// echo '<pre>';
+//   echo 'concatenated_name:'.$concatenated_name.'<br/>';
+//   echo 'sorter_index:'.$sorter_index.'<br/>';
+//   echo 'first:'.$firstname.'<br/>';
+//   echo 'middlename:'.$middlename.'<br/>';
+//   echo 'lastname:'.$lastname.'<br/>';
+//   echo 'suffix:'.$suffix.'<br/>';
+//   echo 'prefix:'.$prefix.'<br/>';
+// echo '</pre>';
+      $artist_azs[$sorter_index] = array('artist_category_name'=>$artist_category_name,'concatenated_name'=>$concatenated_name,'firstname'=>$firstname,'middlename'=>$middlename,'lastname'=>$lastname,'prefix'=>$prefix,'suffix'=>$suffix,'artist_url'=>$artist_url,'category_id'=>$category_id,'include_in_menu'=>$include_in_menu);
+      ksort($artist_azs,SORT_NATURAL); 
+    }
+    $alphabet_count = array_count_values($alphabet_count_array);
+    
+    foreach ($alphabet_count as $alphakey => $alpha) {
+      $count_letters[$alphakey] = $alpha;
+    }
+
+    //Check if letter exists in array
+    $A = array_key_exists("A",$count_letters);
+    $B = array_key_exists("B",$count_letters);
+    $C = array_key_exists("C",$count_letters);
+    $D = array_key_exists("D",$count_letters);
+    $E = array_key_exists("E",$count_letters);
+    $F = array_key_exists("F",$count_letters);
+    $G = array_key_exists("G",$count_letters);
+    $H = array_key_exists("H",$count_letters);
+    $I = array_key_exists("I",$count_letters);
+    $J = array_key_exists("J",$count_letters);
+    $K = array_key_exists("K",$count_letters);
+    $L = array_key_exists("L",$count_letters);
+    $M = array_key_exists("M",$count_letters);
+    $N = array_key_exists("N",$count_letters);
+    $O = array_key_exists("O",$count_letters);
+    $P = array_key_exists("P",$count_letters);
+    $Q = array_key_exists("Q",$count_letters);
+    $R = array_key_exists("R",$count_letters);
+    $S = array_key_exists("S",$count_letters);
+    $T = array_key_exists("T",$count_letters);
+    $U = array_key_exists("U",$count_letters);
+    $V = array_key_exists("V",$count_letters);
+    $W = array_key_exists("W",$count_letters);
+    $X = array_key_exists("X",$count_letters);
+    $Y = array_key_exists("Y",$count_letters);
+    $Z = array_key_exists("Z",$count_letters);
+
+  $alphabettispagetti = array('A' => $A, 'B' => $B, 'C' => $C, 'D' => $D, 'E' => $E, 'F' => $F, 'G' => $G, 'H' => $H, 'I' => $I, 'J' => $J, 'K' => $K, 'L' => $L, 'M' => $M, 'N' => $N, 'O' => $O, 'P' => $P, 'Q' => $Q, 'R' => $R, 'S' => $S, 'T' => $T, 'U' => $U, 'V' => $V, 'W' => $W, 'X' => $X, 'Y' => $Y, 'Z' => $Z);
+  
+  $letter_group = '';
+    foreach($alphabettispagetti as $letter => $letter_items) {
+      if($letter_items==1) {
+        $letter_group = 'letter_group_active';
+      } else {
+        $letter_group = 'letter_group_inactive';
+      }
+
+      echo '<section  id="'.$letter.'" class="'.$letter_group.'">';
+        echo '<h3>'.$letter.'</h3>';  
+          if($letter_items==1) {
+          echo '<div class="name-wrap">';
+              foreach ($artist_azs as $az_key=>$artist_az) {
+                $az = substr($artist_az["lastname"], 0, 1);
+                if($az === $letter) {
+                  if($artist_az["include_in_menu"]==='1') {
+                      echo '<p class="enabled-artist"><a href="'.$artist_az["artist_url"].'">'.$artist_az["concatenated_name"].'</a></p>';
+                  } elseif($artist_az["include_in_menu"]==='0') {
+                      echo '<p class="disabled-artist">'.$artist_az["concatenated_name"].'</p>';
+                  }
+                }
+              }
+          echo '</div>'; // end .name-wrap
+        } // end if($letter_items==1) L:171
+      echo '</section>';
+    } //end: foreach($alphabettispagetti as $letter => $letter_items) 
+  ?>
+  </div>    
+</div><!-- closes container -->

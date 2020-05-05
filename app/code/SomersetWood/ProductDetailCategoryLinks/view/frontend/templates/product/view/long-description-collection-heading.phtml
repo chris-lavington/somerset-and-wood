@@ -1,0 +1,80 @@
+<?php
+
+// for current product
+$product = $block->getCurrentProduct(); 
+$categoryIds = $product->getCategoryIds();
+$categories = $block->getCategoryCollection()
+                    ->addAttributeToFilter('entity_id', $categoryIds);
+
+$showCollectionText=false;
+$plural=false; 
+$i1=0; 
+$primary_collections = array();
+$secondary_collections = array();
+$secondary_collection_ids = array('212','268','269','271','304','5036'); 
+$primary_flag = false;
+$secondary_flag = false; 
+foreach ($categories as $category) {
+
+	$path = explode('/', $category->getPath());
+	if($path[2]==='67') {
+		$showCollectionText = true;
+//echo $path[4];
+		if(in_array($path[4], $secondary_collection_ids)) {
+			$secondary_collections[] = array('collection_id' => $category->getId(), 'collection_name' => $category->getName(), 'collection_url' => $category->getUrl());
+			//echo '1';
+			$secondary_flag = true;
+		} elseif(!in_array($path[4], $secondary_collection_ids)) {
+			$primary_collections[] = array('collection_id' => $category->getId(), 'collection_name' => $category->getName(), 'collection_url' => $category->getUrl());
+			//echo '2';
+			$primary_flag = true;
+		} 
+
+		$i1++;
+		if($i1 >1) {
+			$plural = true;
+		}
+	}
+}
+
+$secondary_heading_exceptions = array('268','5036'); 
+
+// echo 'p: '.$primary_flag.'<br>';
+// echo 's: '.$secondary_flag;
+
+if($primary_flag===true) {
+	foreach ($primary_collections as $primary_collection_data) {
+		echo '<h4>'.$primary_collection_data['collection_name'] . '</h4>';
+	}
+} elseif($primary_flag===false && $secondary_flag===true) {
+	foreach ($secondary_collections as $secondary_collection_data) {
+		if(!in_array($secondary_collection_data['collection_id'], $secondary_heading_exceptions)) {
+			if($plural===true) {
+				if($secondary_collection_data['collection_id']!='212') {
+					echo '<h4>'.$secondary_collection_data['collection_name'] . '</h4>';		
+				} 
+			} else {
+				echo '<h4>'.$secondary_collection_data['collection_name'] . '</h4>';
+			}
+			
+
+		}
+	}
+}
+
+
+
+
+
+
+// $i = 0;
+// foreach ($categories as $category) {
+// 	$path = explode('/', $category->getPath());
+// 	if($path[2]==='67') {
+// 		$i++;
+// 		// echo '<h4><a href="'.$category->getUrl().'">'.$category->getName() . '</a></h4>';
+// 		echo '<h4>'.$category->getName() . '</h4>';
+// 	}
+// }
+
+?>

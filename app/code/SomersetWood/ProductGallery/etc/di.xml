@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- <type name="Magento\Catalog\Block\Product\View\Gallery">
+        <plugin disabled="false" name="somersetwood_product_gallery_plugin" sortOrder="1" type="SomersetWood\ProductGallery\Plugin\Magento\Catalog\Block\Product\View\Gallery"/>
+    </type> -->
+    <preference for="Magento\Catalog\Block\Product\View\Gallery" type="SomersetWood\ProductGallery\Block\Product\View\Gallery"/>
+</config>

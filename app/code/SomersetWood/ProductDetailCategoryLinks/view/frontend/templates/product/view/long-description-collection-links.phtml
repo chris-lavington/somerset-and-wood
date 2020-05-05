@@ -1,0 +1,90 @@
+<?php
+
+// for current product
+$product = $block->getCurrentProduct(); 
+$categoryIds = $product->getCategoryIds();
+$categories = $block->getCategoryCollection()
+                    ->addAttributeToFilter('entity_id', $categoryIds);
+
+$showCollectionText=false;
+$plural=false; 
+$i1=0; 
+$primary_collections = array();
+$secondary_collections = array();
+$secondary_collection_ids = array('212','268','269','271','304','5036'); 
+$primary_flag = false;
+$secondary_flag = false;
+$dogs = false;
+$victorian_animals =false; 
+$victorian_overpainted = false;
+foreach ($categories as $category) {
+
+	$path = explode('/', $category->getPath());
+	if($path[2]==='67') {
+		$showCollectionText = true;
+//echo $path[4];
+		if(in_array($path[4], $secondary_collection_ids)) {
+			$secondary_collections[] = array('collection_id' => $category->getId(), 'collection_name' => $category->getName(), 'collection_url' => $category->getUrl());
+			$secondary_flag = true;
+
+		} elseif(!in_array($path[4], $secondary_collection_ids)) {
+			$primary_collections[] = array('collection_id' => $category->getId(), 'collection_name' => $category->getName(), 'collection_url' => $category->getUrl());
+			$primary_flag = true;
+		}
+
+		if($path[4]==='212') {
+			$dogs = true;
+		}
+		if($path[4]==='269') {
+			$victorian_animals = true;
+		}
+		if($path[4]==='271') {
+			$victorian_overpainted = true;
+		}
+
+		$i1++;
+		if($i1 >1) {
+			$plural = true;
+		}
+	}
+}
+
+if($showCollectionText===true) {
+	echo '<p style="font-weight:bold;" class="product-collection-links">View the full collection';
+	if($plural===true){
+		echo 's';
+	}
+	echo ' ';
+}
+
+//echo 'p: '.$primary_flag.'<br>';
+//echo 's: '.$secondary_flag.'<br>';
+
+foreach ($primary_collections as $primary_collection_data) {
+	echo '<a href="'.$primary_collection_data['collection_url'].'">'.$primary_collection_data['collection_name'] . '</a>';
+}	
+
+if($dogs===true && $victorian_animals===true && $plural===true) {
+	$secondary_collections_reversed = array_reverse($secondary_collections);
+	foreach ($secondary_collections_reversed as $secondary_collections_reversed_data) {
+		if($plural===true && $secondary_collections_reversed_data ===end($secondary_collections_reversed) ) { echo ' and '; }
+		echo '<a href="'.$secondary_collections_reversed_data['collection_url'].'">'.$secondary_collections_reversed_data['collection_name'] . '</a>';
+	}
+} elseif($dogs===true && $victorian_overpainted===true && $plural===true) {
+	$secondary_collections_reversed = array_reverse($secondary_collections);
+	foreach ($secondary_collections_reversed as $secondary_collections_reversed_data) {
+		if($plural===true && $secondary_collections_reversed_data ===end($secondary_collections_reversed) ) { echo ' and '; }
+		echo '<a href="'.$secondary_collections_reversed_data['collection_url'].'">'.$secondary_collections_reversed_data['collection_name'] . '</a>';
+	}
+} else {
+	foreach ($secondary_collections as $secondary_collection_data) {
+		if($plural===true && $secondary_collection_data ===end($secondary_collections) ) { echo ' and '; }
+		echo '<a href="'.$secondary_collection_data['collection_url'].'">'.$secondary_collection_data['collection_name'] . '</a>';
+	}	
+}
+
+if($showCollectionText===true) {
+	echo '</p>';
+}
+	
+?>

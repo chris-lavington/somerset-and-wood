@@ -1,0 +1,158 @@
+<div class="oneColumnCentre">
+<div class="newsletter-manage-container">
+<?php
+if($_GET) {
+	$queryString = base64_decode($_SERVER['QUERY_STRING']);
+	function decrypt($ivHashCiphertext, $password) {
+		$method = "AES-256-CBC";
+		$iv = substr($ivHashCiphertext, 0, 16);
+		$hash = substr($ivHashCiphertext, 16, 32);
+		$ciphertext = substr($ivHashCiphertext, 48);
+		$key = hash('sha256', $password, true);
+
+		if (hash_hmac('sha256', $ciphertext, $key, true) !== $hash) return null;
+
+		return openssl_decrypt($ciphertext, $method, $key, OPENSSL_RAW_DATA, $iv);
+	}
+
+	$decrypt = decrypt($queryString, 'kepler-186f');
+	parse_str($decrypt,$decrypted_string);
+	$dateSent = $decrypted_string['dateSent'];
+	$address = $decrypted_string['address'];
+	if(!empty($dateSent) && !empty($address)){
+		$date_sent = $dateSent;
+		$email = $address; 
+	}
+	else{
+	    exit("Invalid parameters passed");
+	}
+
+	$date_now = date("Y-m-d");
+
+	$api_key = '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';
+	$sg = new \SendGrid($api_key);
+
+	function dateDifference($date_1 , $date_2 , $differenceFormat = '%a' )
+	{
+	    $datetime1 = date_create($date_1);
+	    $datetime2 = date_create($date_2);
+	    $interval = date_diff($datetime1, $datetime2);
+	    return $interval->format($differenceFormat);   
+	}
+
+	$date_diff = dateDifference($date_sent,$date_now,'%a');
+
+	//Confirm email type is opt in and link has been clicked within 1 day
+	if ($date_diff == 0) {	
+		$json_content = '[
+		  {
+		    "email": "'.$email.'"
+		  }
+		]';
+		$request_body = json_decode($json_content);
+		$lookup_response = $sg->client->contactdb()->recipients()->post($request_body);
+		$body_array = json_decode($lookup_response->body(),true);
+		$subscriber_email_id = $body_array['persisted_recipients'][0];
+
+
+			$list_id = "2874373";
+			$recipient_id = $subscriber_email_id;
+			$add_to_list_response = $sg->client->contactdb()->lists()->_($list_id)->recipients()->_($recipient_id)->post();
+			// echo '<pre>';
+			// echo $add_to_list_response->statusCode();
+			// echo $add_to_list_response->body();
+			// print_r($add_to_list_response->headers());
+			// echo '</pre>';
+			echo "<h3>Subscription Success</h3>";
+			echo "<p>Thank you.</p>";
+			echo "<p>The email address ".$email." is now subscribed to the Somerset & Wood Fine Art Newsletter.</p>";
+			echo '<p><a class="sw-btn-base sw-btn-secondary sw-fill-secondary" href="/customer/account/"><i class="feather icon-arrow-left"></i>Back to account overview</a></p>';
+		
+		//update 'confirmed' field
+		$confirmed_request_body = json_decode('[
+		  {
+		    "email": "'.$email.'",
+		    "confirmed": "Yes"
+		  }
+		]');
+		$confirmed_response = $sg->client->contactdb()->recipients()->patch($confirmed_request_body);
+		 // echo '<pre>';
+		 // echo $confirmed_response->statusCode();
+		 // echo $confirmed_response->body();
+		 // print_r($confirmed_response->headers());
+		 // echo '</pre>';
+
+		// send welcome email
+		$mail_text = "<p style='margin-bottom:14px;'>Welcome,</p><p style='margin-bottom:14px;'>Thank you for subscribing to the Somerset & Wood Fine Art newsletter.</p><p style='margin-bottom:14px;'>We hope you enjoy receiving weekly notification of newly listed stock, giving you have first chance to view and buy new pictures—in advance of them going on sale on other selling platforms.</p><p style='margin-bottom:14px;'>We also use our newsletter as a way to share research and stories each week, plus we offer exclusive discounts to our newsletter subscribers.</p><p style='margin-bottom:14px;'>It is easy to unsubscribe at any time, in the footer of every newsletter email.</p><p style='margin-bottom:14px;'>Thank you,</p><p style='margin-bottom:14px;'>Somerset & Wood Fine Art</p>";
+		$template_id = "7b92406b-8ad4-45fc-bfef-8362ca51f61d";
+		$request_body = json_decode('{
+			  "content": [
+			    {
+			      "type": "text/html",
+			      "value": "'.$mail_text.'"
+			    }
+			  ],
+			  "from": {
+			    "email": "noreply@somersetandwood.com",
+			    "name": "Somerset & Wood Notification"
+			  },
+			  "mail_settings": {
+			    "sandbox_mode": {
+			      "enable": false
+			    }
+			  },
+			  "personalizations": [
+			    {
+			      "bcc": [
+			        {
+			          "email": "chris.lavington@me.com",
+			          "name": "Chris Lavington"
+			        }
+			      ],
+			      "custom_args": {
+			        "type": "optIn",
+			        "time_sent": "'.date("Y-m-d").'"
+			      },
+			      "headers": {
+			        "X-Accept-Language": "en",
+			        "X-Mailer": "S&W newsletter subscribtion welcome email"
+			      },
+			      "subject": "Somerset & Wood Fine Art: Welcome to our newsletter",
+			      "substitutions": {
+			      	
+			      },
+			      "to": [
+			        {
+			          "email": "'.$email.'"
+			        }
+			      ]
+			    }
+			  ],
+			  "template_id": "'.$template_id.'",
+			  "tracking_settings": {
+			    "click_tracking": {
+			      "enable": true,
+			      "enable_text": true
+			    },
+			    "open_tracking": {
+			      "enable": true,
+			      "substitution_tag": "%opentrack"
+			    },
+			    "subscription_tracking": {
+			      "enable": false,
+			      "html": "If you would like to unsubscribe and stop receiving these emails <% clickhere %>.",
+			      "substitution_tag": "<%click here%>",
+			      "text": "If you would like to unsubscribe and stop receiving these emails <% click here %>."
+			    }
+			  }
+			}');
+		$welcome_response = $sg->client->mail()->send()->post($request_body);
+
+
+	} else {
+		echo '<h3>Confirmation Link Out of Date</h3><p>The confirmation link is out of date. Please subscribe again to receive a new confirmation email.</p><p>The confirmation link is valid for one day.</p><p><a class="sw-btn-base sw-btn-secondary sw-fill-secondary" href="/newsletter/manage/"><i class="feather icon-arrow-left"></i>Back to newsletter subscription</a></p>';
+	}
+}
+?>
+</div>
+</div>

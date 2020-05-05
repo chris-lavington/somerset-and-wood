@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+	<widget class="SomersetWood\ArticleWidget\Block\Article" id="somersetwood_articlewidget_articlewidget">
+		<label>SW Article Widget</label>
+		<description></description>
+		<parameters>
+			<parameter name="articleimage" xsi:type="block" visible="true" sort_order="100" required="true">
+	            <label translate="true">Image</label>
+	            <block class="Staempfli\WidgetExtraFields\Block\Adminhtml\ImageField"/>
+	        </parameter>
+	        <parameter name="articlelink" sort_order="11" visible="true" xsi:type="text">
+				<label>Link</label>
+			</parameter>
+	        <parameter name="articletitle" sort_order="10" visible="true" xsi:type="text">
+				<label>Article Title</label>
+			</parameter>
+	        <parameter name="articletext" xsi:type="block" required="true" visible="true" sort_order="3">
+	            <label translate="true">Text</label>
+	            <block class="SomersetWood\ArticleWidget\Block\Adminhtml\Widget\TextField"/>
+	        </parameter> 
+		</parameters>
+	</widget>
+</widgets>

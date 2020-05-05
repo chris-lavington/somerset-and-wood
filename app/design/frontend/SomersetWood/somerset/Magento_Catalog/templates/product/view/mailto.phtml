@@ -1,0 +1,14 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php $_product = $block->getProduct() ?>
+<?php if ($block->canEmailToFriend()): ?>
+    <a href="<?= /* @escapeNotVerified */ $this->helper('Magento\Catalog\Helper\Product')->getEmailToFriendUrl($_product) ?>"
+       class=""><i class="feather icon-plus"></i><?= /* @escapeNotVerified */ __('Share') ?></a>
+<?php endif; ?>

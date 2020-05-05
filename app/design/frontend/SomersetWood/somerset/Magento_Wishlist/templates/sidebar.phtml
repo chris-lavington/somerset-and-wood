@@ -1,0 +1,56 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var \Magento\Wishlist\Block\Customer\Sidebar $block */
+?>
+<?php
+$wishlistHelper = $this->helper('Magento\Wishlist\Helper\Data');
+?>
+<?php if ($wishlistHelper->getWishList()) : ?>
+    <?php if ($wishlistHelper->isAllow()) : ?>
+        <div class="block block-wishlist" data-bind="scope: 'wishlist'">
+            <!-- ko if: wishlist().counter -->
+            <div class="block-title">
+                <h3 role="heading" aria-level="2"><?= $block->escapeHtml($block->getTitle()) ?></h3>
+                <!-- ko if: wishlist().counter -->
+                <!-- <span data-bind="text: wishlist().counter" class="counter"></span> -->
+                <!-- /ko -->
+            </div>
+            <div class="block-content">
+                <strong class="subtitle"><?= $block->escapeHtml(__('Last Added Items')) ?></strong>
+                <!-- ko if: wishlist().counter -->
+                    <p>You have <span data-bind="text: wishlist().counter" class=""></span> in your gallery list.</p>
+                    <div class="actions-toolbar no-display" data-bind="css: {'no-display': null}">
+                        <div class="primary">
+                            <a class="action details sw-btn-base sw-btn-secondary sw-fill-long"
+                               href="<?= $block->escapeUrl($this->helper('Magento\Wishlist\Helper\Data')->getListUrl()) ?>"
+                               title="<?= $block->escapeHtmlAttr(__('Go to Wish List')) ?>"><span><?= $block->escapeHtml(__('Go to Wish List')) ?></span><i data-feather="arrow-right"></i></a>
+                        </div>
+                    </div>
+                <!-- /ko -->
+                <!-- ko ifnot: wishlist().counter -->
+                    <div class="empty"><?= $block->escapeHtml(__('You have no items in your wish list.')) ?></div>
+                <!-- /ko -->
+            </div>
+            <!-- /ko -->
+        </div>
+    <script type="text/x-magento-init">
+        {
+            "*": {
+                "Magento_Ui/js/core/app": {
+                    "components": {
+                        "wishlist": {
+                            "component": "Magento_Wishlist/js/view/wishlist"
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <?php endif ?>
+<?php endif ?>

@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+	<widget class="SomersetWood\LatestCollectionsWidget\Block\LatestCollections" id="somersetwood_latestcollectionswidget_latestcollectionswidget">
+		<label>SW Latest Collections Widget</label>
+		<description></description>
+		<parameters>
+			<parameter name="latestcollectionsimage" xsi:type="block" visible="true" sort_order="100" required="true">
+	            <label translate="true">Image</label>
+	            <block class="Staempfli\WidgetExtraFields\Block\Adminhtml\ImageField"/>
+	        </parameter>
+	        <parameter name="latestcollectionslink" sort_order="11" visible="true" xsi:type="text">
+				<label>Link</label>
+			</parameter>
+	        <parameter name="latestcollectionstitle" sort_order="10" visible="true" xsi:type="text">
+				<label>Latest Collections Title</label>
+			</parameter>
+	        <parameter name="latestcollectionstext" xsi:type="block" required="true" visible="true" sort_order="3">
+	            <label translate="true">Text</label>
+	            <block class="SomersetWood\LatestCollectionsWidget\Block\Adminhtml\Widget\TextField"/>
+	        </parameter> 
+	<!-- 		<parameter name="widgetcontent" sort_order="20" visible="true" xsi:type="textarea">
+				<label>Content</label>
+			</parameter> -->
+		</parameters>
+		
+	</widget>
+</widgets>

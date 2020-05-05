@@ -1,0 +1,13 @@
+{
+    "name": "mageworx/module-storecurrencymeta",
+    "version": "2.2.13",
+    "type": "metapackage",
+    "require": {
+        "mageworx/module-info": ">=1.0.0",
+        "mageworx/module-storeswitcher": "2.0.13",
+        "mageworx/module-currencyswitcher": "2.0.8",
+        "mageworx/module-customerlocation": "2.0.5",
+        "mageworx/module-geolock": "1.0.5",
+        "mageworx/module-geoip": ">=2.2.0"
+    }
+}

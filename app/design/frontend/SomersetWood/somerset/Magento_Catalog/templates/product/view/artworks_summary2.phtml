@@ -1,0 +1,16 @@
+<?php if ($detailedInfoGroup = $block->getGroupChildNames('summary2', 'getChildHtml')):?>
+    <div class="product info summary2">
+        <?php $layout = $block->getLayout(); ?>
+		<ul class="summary2-content">
+			<?php foreach ($detailedInfoGroup as $name):?>
+				<?php
+					$html = $layout->renderElement($name);
+				?>
+				<li>
+					<?php /* @escapeNotVerified */ echo $html; ?>
+					
+				</li>
+			<?php endforeach;?>
+		</ul>
+   </div>
+<?php endif; ?>
