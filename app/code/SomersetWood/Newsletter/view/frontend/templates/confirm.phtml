@@ -4,7 +4,7 @@
 if($_POST) {
 	if($_POST['email'] !="") {
 		$subscriber_email = $_POST['email'];
-		$apiKey = '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';
+		//removed api key
 		$apiKey = trim($apiKey);
 		$sg = new \SendGrid($apiKey);
 		$list_id = "2874373";

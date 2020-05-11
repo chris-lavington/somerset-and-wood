@@ -5,7 +5,7 @@ if($_POST) {
 	if($_POST['unsubscribe_id'] !="") {
 		$unsubscribe_id = $_POST['unsubscribe_id'];
 		$customerEmail = $_POST['customer_email'];
-		$apiKey = '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';
+		// API key removed
 		$sg = new \SendGrid($apiKey);
 		
 		$request_body = json_decode('[

@@ -15,7 +15,7 @@ $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
 $customerSession = $objectManager->create('Magento\Customer\Model\Session');
 if ($customerSession->isLoggedIn()) {    
     $customerEmail = $customerSession->getCustomer()->getEmail();
-    $apiKey = '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';
+   // removed api key
         $sg = new \SendGrid($apiKey);
         $list_id = "2874373";
         $response = $sg->client->contactdb()->lists()->_($list_id)->recipients()->get(null, null);
